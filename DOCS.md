@@ -1,24 +1,6 @@
-<div align="center">
+## What is this website?
+Replit in a nutshell.
 
-<kbd>
-<img style="border-radius:50%" height="150px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/public/img/logo.svg">
-</kbd>
-
-<h1>Tsunami</h1>
-
-<h3>An official Fog Network proxy site, made to access the blocked web</h3>
-
-<p>Surf without web filters or restrictions. Made with style, Tsunami is a rather fancy service dedicated to protecting your freedom from censorship.
-Read the documentation below to find out more</p>
-
-<p>Want to improve Tsunami? <a href="https://github.com/FogNetwork/Tsunami/compare">Create a pull request</a></p>
-</div>
-
-<p align="center">
-<a href="https://heroku.com/deploy?template=https://github.com/FogNetwork/Tsunami"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/heroku2.svg"><img></a>
-<a href="https://repl.it/github/FogNetwork/Tsunami"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/replit2.svg"><img></a>
-<a href="https://glitch.com/edit/#!/import/github/FogNetwork/Tsunami"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/glitch2.svg"><img></a>
-</p>
 
 ## Documentation
 
@@ -78,6 +60,8 @@ Read the documentation below to find out more</p>
 
 ## Setup
 
+**Please Note: Aero needs to be on a subdomain, see [proxies](#proxies) for more info**
+
 ### Locally
 
 ```sh
@@ -96,7 +80,11 @@ Click one of the buttons above and follow the steps
 
 ### Proxies
 
+Some of the proxies on Tsunami are hosted on subdomains, deploy the correct proxy for Tsunami to work
+
 Palladium and Corrosion are hosted locally, so you don't need a subdomain
+
+[a.example.com (Aero)](https://github.com/titaniumnetwork-dev/aero)
 
 [Locally (Palladium)](https://github.com/FogNetwork/Palladium)
 
@@ -130,10 +118,13 @@ var palladiumproxy = window.location.protocol + "//" + window.location.hostname 
 
 var corrosionproxy = window.location.protocol + "//" + window.location.hostname + "/corrosion/gateway?url="
 
+var aeroproxy = window.location.protocol + "//" + "a." + window.location.hostname + "/http/"
 ```
 `palladiumproxy` Location for Palladium proxy
 
 `corrosionproxy` Location for Corrosion proxy
+
+`aeroproxy` Location for Aero proxy
 
 Custom Proxy Example:
 
@@ -171,7 +162,7 @@ Nebelung - [Nebelung#1335](https://discord.com/users/887118260963782686)
 
 [Modified Corrosion](https://github.com/BinBashBanana/Corrosion-Heroku)
 
-[Aero](https://github.com/titaniumnetwork-dev/aero) (Not Used)
+[Aero](https://github.com/titaniumnetwork-dev/aero)
 
 [Womginx](https://github.com/binary-person/womginx) (Not Used)
 
