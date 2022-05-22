@@ -1,8 +1,6 @@
 <div align="center">
 
-<kbd>
-<img style="border-radius:50%" height="150px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/public/img/logo.svg">
-</kbd>
+<img style="border-radius:50%" height="150px" src="https://raw.githubusercontent.com/IDontCodee/sussy/main/public/img/logo.svg">
 
 <h1>Sussy</h1>
 
