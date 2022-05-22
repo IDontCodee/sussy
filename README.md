@@ -10,8 +10,7 @@
 
 <p>Surf without web filters or restrictions. Made with style, Tsunami is a rather fancy service dedicated to protecting your freedom from censorship.
 Read the documentation below to find out more</p>
-
-<p>Want to improve Tsunami? <a href="https://github.com/FogNetwork/Tsunami/compare">Create a pull request</a></p>
+  
 </div>
 
 <p align="center">
@@ -24,16 +23,10 @@ Read the documentation below to find out more</p>
   - [Supported Sites](#supported-sites)
   - [Features](#features)
   - [Pages](#pages)
-- [Setup](#setup)
-  - [Locally](#locally)
-  - [Deploy](#deploy)
-  - [Proxies](#proxies)
-  - [Configuration](#configuration)
+- [Configuration](#configuration)
 - [Support](#support)
   - [FAQ](#faq)
-  - [Contact](#contact)
 - [More](#more)
-  - [Proxy Sources](#proxy-sources)
   - [Credits](#credits)
   - [Contributing](#contributing)
 
@@ -74,52 +67,7 @@ Read the documentation below to find out more</p>
 - `/9` Youtube
 - `/404` 404 Error
 
-## Setup
-
-### Locally
-
-```sh
-git clone https://github.com/FogNetwork/Tsunami
-
-cd Tsunami
-
-npm install
-
-npm start
-```
-
-### Deploy
-
-Click one of the buttons above and follow the steps
-
-### Proxies
-
-Palladium and Corrosion are hosted locally, so you don't need a subdomain
-
-[Locally (Palladium)](https://github.com/FogNetwork/Palladium)
-
-[Locally (Corrosion)](https://github.com/titaniumnetwork-dev/Corrosion)
-
-### Configuration
-
-**config.json**
-
-```json
-{
-    "port": "8080",
-    "auth": "false",
-    "username": "user",
-    "password": "secret"
-}
-```
-
-`"port": "8080"` Changes the port 
-
-`"auth": "false"` Basic authentication, set to true or false
-
-`"username"` Username for authentication
-
-`"password"` Password for authentication
+## Configuration
 
 **/public/js/go.js**
 
@@ -143,10 +91,6 @@ var palladiumproxy = "https://example.com/palladium/"
 
 ### FAQ
 
-**How can I get new domains?**
-
-Join our [discord](https://discord.gg/yk33HZSZkU) for more Tsunami links
-
 **Captcha not working/issues**
 
 Captcha is only supported on Womginx, though the support is limited
@@ -155,35 +99,7 @@ Captcha is only supported on Womginx, though the support is limited
 
 Try using Womginx or Corrosion. Refreshing the page might help
 
-### Contact
-
-Nebelung - [Nebelung#1335](https://discord.com/users/887118260963782686)
-
 ## More
-
-### Proxy Sources
-
-[Palladium](https://github.com/FogNetwork/Palladium)
-
-[Corrosion](https://github.com/titaniumnetwork-dev/Corrosion)
-
-[Modified Corrosion](https://github.com/BinBashBanana/Corrosion-Heroku)
-
-[Aero](https://github.com/titaniumnetwork-dev/aero) (Not Used)
-
-[Womginx](https://github.com/binary-person/womginx) (Not Used)
-
-[PyDodge](https://github.com/BinBashBanana/PyDodge) (Not Used)
-
-[Alloy](https://github.com/titaniumnetwork-dev/alloy) (Not Used)
-
-[SystemYA](https://github.com/sysce/proxy) (Not Used)
-
-[Via](https://github.com/hypothesis/via) (Not Used)
-
-[Node Unblocker](https://github.com/nfriedly/node-unblocker) (Not Used)
-
-[Powermouse](https://github.com/titaniumnetwork-dev/powermouse) (Not Used)
 
 ### Credits
 
@@ -207,6 +123,6 @@ Nebelung - [Nebelung#1335](https://discord.com/users/887118260963782686)
 
 ### Contributing
 
-See [CONTRIBUTING.md](https://github.com/FogNetwork/Tsunami/blob/main/CONTRIBUTING.md)
+See [CONTRIBUTING.md](https://github.com/IDontCodee/sussy/blob/main/CONTRIBUTING.md)
 
 Special Thanks To Quite A Fancy Emerald, Inspiration for Tsunami
