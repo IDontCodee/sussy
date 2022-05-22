@@ -4,11 +4,9 @@
 <img style="border-radius:50%" height="150px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/public/img/logo.svg">
 </kbd>
 
-<h1>Tsunami</h1>
+<h1>Sussy</h1>
 
-<h3>An official Fog Network proxy site, made to access the blocked web</h3>
-
-<p>Surf without web filters or restrictions. Made with style, Tsunami is a rather fancy service dedicated to protecting your freedom from censorship.
+<p>Surf without web filters or restrictions. Made with style, Sussy is a rather fancy service dedicated to protecting your freedom from censorship.
 Read the documentation below to find out more</p>
   
 </div>
@@ -126,3 +124,5 @@ Try using Womginx or Corrosion. Refreshing the page might help
 See [CONTRIBUTING.md](https://github.com/IDontCodee/sussy/blob/main/CONTRIBUTING.md)
 
 Special Thanks To Quite A Fancy Emerald, Inspiration for Tsunami
+
+Also Special Thanks To Nebelung-Dev, who made Tsunami, the base of Sussy.
