@@ -1,0 +1,38 @@
+{
+  "name": "sussy",
+  "short_name": "sussy",
+  "description": "An official sussy website",
+  "icons": [{
+    "src": "/img/logo.png",
+      "sizes": "500x500",
+      "type": "image/png"
+    }],
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "minimal-ui",
+  "background_color": "black",
+  "theme_color": "black",
+   "shortcuts": [
+    {
+      "name": "Arcade",
+      "url": "/1",
+      "icons": [{
+         "src": "/img/a.jpg", "sizes": "612x612"
+       }]
+    },
+     {
+      "name": "Chat",
+      "url": "/2",
+      "icons": [{
+         "src": "/img/c.png", "sizes": "256x256"
+       }]
+    },
+     {
+      "name": "Settings",
+      "url": "/3",
+       "icons": [{
+         "src": "/img/settings.jpg", "sizes": "263x263"
+       }]
+    }
+      ]
+}
