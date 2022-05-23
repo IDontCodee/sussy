@@ -171,9 +171,9 @@
         "location": "/corrosion/gateway?url=https://littlealchemy.com"
     },
           {
-        "title": "Cool Math Games",
-        "image": "/games/images/coolmathgames.jpeg",
-        "location": "/corrosion/gateway?url=https://www.coolmathgames.com"
+        "title": "Little Alchemy 2",
+        "image": "/games/images/alchemy2.jpg",
+        "location": "/corrosion/gateway?url=https://littlealchemy2.com"
     },
     {
         "title": "Retro - Coming Soon!",
