@@ -51,14 +51,14 @@ if (auth == "true") {
 app.use(basicAuth({
     users,
     challenge: true,
-    unauthorizedResponse: autherror
+    unauthorizedResponse: res.sendFile("403.html", {root: "./public"});
 }));
 }
 
 function autherror(req) {
     return req.auth
         ? ("Credentials " + req.auth.user + ":" + req.auth.password + " rejected")
-        : "Error"
+        : 
 }
 
 app.use(express.static("./public", {
