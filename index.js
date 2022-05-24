@@ -51,7 +51,7 @@ if (auth == "true") {
 app.use(basicAuth({
     users,
     challenge: true,
-    unauthorizedResponse: res.sendFile("403.html", {root: "./public"});
+    unauthorizedResponse: autherror
 }));
 }
 
