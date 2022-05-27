@@ -130,11 +130,6 @@
         "image": "/games/images/2048.png",
         "location": "/games/files/2048"
     },
-      {
-        "title": "Twitch Tetris",
-        "image": "/games/images/tetris.png",
-        "location": "/games/files/twitchtetris"
-    },
   {
         "title": "Retro Bowl",
         "image": "/games/images/retro-bowl.jpg",
