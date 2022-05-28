@@ -9,14 +9,14 @@
   <title></title>
   <style>
     body {
-      color: #000000;
+      color: #ffffff;
       font-family: sans-serif;
       overflow: hidden;
       margin: 0;
       padding: 0;
     }
     :root, body.is-fullscreen {
-      background-color: #ffffff;
+      background-color: #070707;
     }
     [hidden] {
       display: none !important;
@@ -46,7 +46,7 @@
       cursor: default;
       user-select: none;
       -webkit-user-select: none;
-      background-color: #ffffff;
+      background-color: #070707;
     }
     #launch {
       background-color: rgba(0, 0, 0, 0.7);
@@ -137,7 +137,7 @@
     }
     
   </style>
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#070707">
   
 </head>
 <body>
@@ -220,9 +220,9 @@
       scaffolding.addCloudProvider(new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org","wss://clouddata.turbowarp.xyz"], "523967150"));
 
       vm.setTurboMode(false);
-      if (vm.setInterpolation) vm.setInterpolation(false);
+      if (vm.setInterpolation) vm.setInterpolation(true);
       if (vm.setFramerate) vm.setFramerate(30);
-      if (vm.renderer.setUseHighQualityRender) vm.renderer.setUseHighQualityRender(false);
+      if (vm.renderer.setUseHighQualityRender) vm.renderer.setUseHighQualityRender(true);
       if (vm.setRuntimeOptions) vm.setRuntimeOptions({
         fencing: true,
         miscLimits: true,
@@ -245,7 +245,7 @@
       handleError(e);
     }
   </script>
-  <script></script>
+  
   
     <script>
       const getProjectData = (function() {
