@@ -126,6 +126,11 @@
         "location": "/games/files/syobon-action"
     },
     {
+        "title": "Twitch Tetris",
+        "image": "/games/images/tetris.png",
+        "location": "/games/files/twitchtetris"
+    },
+    {
         "title": "2048",
         "image": "/games/images/2048.png",
         "location": "/games/files/2048"
