@@ -49,6 +49,11 @@
         "image": "/games/images/flappy-bird.png",
         "location": "/games/files/flappy-bird"
     },
+      {
+        "title": "Super Sus",
+        "image": "/games/images/super-sus.jpg",
+        "location": "/corrosion/gateway?url=https://now.gg/lp/pi-productions/9433/super-sus/player?referrer=https%3A%2F%2Fnow.gg%2Fapps%2Fpi-productions%2F9433%2Fsuper-sus.html&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiIwMUc0RUIxUE5aV1cwVlJGVkYzNVlRREVKWiIsIm5vd1VzZXJJZCI6IjAxRzFDR01CVDczOFpCMkY2MjdEQkE3WlpBIiwiaHYiOmZhbHNlLCJwYWNrYWdlTmFtZSI6ImNvbS5qZS5zdXBlcnN1cyIsInB1Ymxpc2hlciI6Im5vd2dnIiwiYXBwU2x1ZyI6InN1cGVyLXN1cyIsImFwcFB1Ymxpc2hlclNsdWciOiJwaS1wcm9kdWN0aW9ucyIsImNhbXBhaWduSWQiOiJuZnRFOVBnRVFENDhoZHdrb2FiYTVFaEUiLCJhcHBJZCI6Ijk0MzMiLCJwbGF5VGltZSI6MTgwMCwicmVkaXJlY3RVcmwiOiJodHRwczovL25vdy5nZy9scC9waS1wcm9kdWN0aW9ucy85NDMzL3N1cGVyLXN1cyIsImlhdCI6MTY1NDA0Mzc2MSwiZXhwIjoxNjU0MDQ0NjYxfQ.TRed5YFO105-CgP7sLQYHdFQoQLTsqeeELKPBfx4oV8&sessionId=01G4EB1PNZWW0VRFVF35YQDEJZ"
+    },
     {
         "title": "Friday Night Funkin'",
         "image": "/games/images/fridaynightfunkin.jpg",
