@@ -51,10 +51,6 @@ right: 350px;
 right: 250px;
 }
 
-.chatbox {
-right: 150px;
-}
-
 .settings {
 right: 50px;
 }
@@ -119,6 +115,8 @@ left: 0;
 right: 0; 
 bottom: 0;
 border: none;
+width: 100%;
+height: calc(100% - 60px);
 }
 
 .icons-pos {
