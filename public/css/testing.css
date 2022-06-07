@@ -20,7 +20,7 @@ color: #666666;
 }
 
 .navbar {
-background: var(--bg-main);
+background-color: #343333;
 height: 60px;
 position: fixed;
 top: 0;
@@ -33,16 +33,15 @@ justify-content: end;
 }
 
 .navname {
+color: var(--light);
+font-size: 35px;
 padding: 8px;
 padding-left: 15px;
-margin-right: auto;
-display: flex;
-cursor: pointer;
-filter: drop-shadow(0 3px 2px var(--bg-main));
+font-family: Quicksand;
 }
 
 .navitem {
-color: var(--light-text);
+color: var(--light);
 font-size: 16px;
 margin: 25px;
 }
