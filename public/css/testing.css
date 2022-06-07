@@ -33,11 +33,12 @@ justify-content: end;
 }
 
 .navname {
-color: var(--light);
-font-size: 35px;
 padding: 8px;
 padding-left: 15px;
-font-family: Quicksand;
+margin-right: auto;
+display: flex;
+cursor: pointer;
+filter: drop-shadow(0 3px 2px var(--bg-main));
 }
 
 .navitem {
