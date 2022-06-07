@@ -26,6 +26,10 @@ position: fixed;
 top: 0;
 left: 0;
 right: 0;
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+justify-content: end;
 }
 
 .navname {
@@ -39,8 +43,7 @@ font-family: Quicksand;
 .navitem {
 color: var(--light);
 font-size: 16px;
-position: fixed;
-top: 20px;
+margin: 25px;
 }
 
 .home {
