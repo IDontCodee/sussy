@@ -15,39 +15,14 @@ Read the documentation below to find out more</p>
 
 ## Documentation
 
-- [Overview](#overview)
-  - [Supported Sites](#supported-sites)
-  - [Features](#features)
-  - [Pages](#pages)
+
+- [Pages](#pages)
 - [Configuration](#configuration)
-- [Support](#support)
-  - [FAQ](#faq)
+- [FAQ](#faq)
 - [More](#more)
   - [Credits](#credits)
   - [Contributing](#contributing)
 
-## Overview
-
-### Supported Sites
-
-- google.com
-- discord.com
-- youtube.com
-- invidio.us
-- reddit.com
-- wolframalpha.com
-- 1v1.lol
-- schoolcheats.net?
-
-### Features
-
-- All the best proxies
-- Nice game library
-- Tab cloaking and other cool features
-- Basic auth
-- Customizable CSS
-- Installable PWA
-- Build in youtube downloader
 
 ## Pages
 
@@ -83,9 +58,7 @@ Custom Proxy Example:
 var palladiumproxy = "https://example.com/palladium/"
 ```
 
-## Support
-
-### FAQ
+## FAQ
 
 **Captcha not working/issues**
 
