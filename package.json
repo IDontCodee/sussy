@@ -66,6 +66,7 @@
         "webpack": "^5.58.0",
         "ws": "^8.2.3",
         "ytdl-core": "^4.9.2",
-        "zeros": "^1.0.0"
+        "zeros": "^1.0.0",
+        "Rhodium": "github:ludicrousdevelopment/rhodium"
     }
 }
