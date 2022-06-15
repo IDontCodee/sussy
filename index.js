@@ -10,7 +10,7 @@ const basicAuth = require("express-basic-auth");
 const config = require("./config.json")
 const port = process.env.PORT || config.port
 const Corrosion = require("./lib/server")
-import RhodiumProxy from 'Rhodium'
+const PalladiumProxy = require("./palladium/server")
 const auth = process.env['auth']
 const username = process.env['username']
 const password = process.env['password']
@@ -33,15 +33,19 @@ const proxy = new Corrosion({
 
 proxy.bundleScripts();
 
-const Rhodium = new RhodiumProxy({
+const Palladium = new PalladiumProxy({
   encode: "xor",
-  prefix: "/rhodium/",
+  ssl: false,
+  prefix: "/palladium/",
   server: app,
   Corrosion: [true, proxy],
-  title: "sussy"
+  title: "sussy",
+  /*"requestMiddleware": [
+    PalladiumProxy.blackList(["accounts.google.com"], "Page is Blocked")
+  ],*/
 })
 
-Rhodium.init();
+Palladium.init();
 
 if (auth == "true") { 
 app.use(basicAuth({
@@ -83,8 +87,8 @@ app.use(function (req, res) {
       mist.video(req, res)
     } else if (req.url.startsWith(proxy.prefix)) {
       proxy.request(req,res);
-    } else if (req.url.startsWith(Rhodium.prefix)) {
-      return Rhodium.request(req, res)
+    } else if (req.url.startsWith(Palladium.prefix)) {
+      return Palladium.request(req, res)
     } else {
       res.status(404).sendFile("404.html", {root: "./public"});
     }
