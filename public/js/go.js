@@ -11,7 +11,7 @@ window.navigator.serviceWorker.register('./uv.js', {scope: __uv$config.prefix})
 }
 
 var Stomp = new StompBoot({
-  bare_server: "https://sussy-gs-production.up.railway.app/bare/",
+  bare_server: "/bare/",
   directory: "/stomp/",
   loglevel: StompBoot.LOG_ERROR,
   codec: StompBoot.CODEC_XOR
