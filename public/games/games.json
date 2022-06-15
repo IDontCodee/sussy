@@ -143,7 +143,7 @@
   {
         "title": "Imposter.io",
         "image": "/games/images/imposter.png",
-        "location": "/uv/gateway?url=https://imposter.io"
+        "location": "/corrosion/gateway?url=https://imposter.io"
     },
     {
         "title": "Achievement Unlocked",
