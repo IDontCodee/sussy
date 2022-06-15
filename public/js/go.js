@@ -4,20 +4,11 @@ var corrosionproxy = window.location.protocol + "//" + window.location.hostname 
 
 var ultravioletproxy = window.location.protocol + "//" + window.location.hostname + __uv$config.prefix
 
-var stompproxy = window.location.protocol + "//" + window.location.hostname
 
 if ('serviceWorker' in navigator) {
 window.navigator.serviceWorker.register('./uv.js', {scope: __uv$config.prefix})
 }
 
-var Stomp = new StompBoot({
-  bare_server: "/bare/",
-  directory: "/stomp/",
-  loglevel: StompBoot.LOG_ERROR,
-  codec: StompBoot.CODEC_XOR
-})
-
-var StompSearch = new StompBoot.SearchBuilder("https://google.com/search?q=%s")
 
 function searchurl(url) {
   var search = localStorage.getItem("search")
@@ -42,8 +33,6 @@ return rhodiumproxy + url
 return corrosionproxy + url
 } else if (currentproxy == "Ultraviolet") {
 return ultravioletproxy + __uv$config.encodeUrl(url)
-} else if (currentproxy == "Stomp") {
-return stompproxy + Stomp.html(StompSearch.query(url))
 }
 }
 
@@ -128,7 +117,6 @@ var currentproxy = localStorage.getItem("proxy")
 var rhodium = document.getElementById("rhodium")
 var corrosion = document.getElementById("corrosion")
 var ultraviolet = document.getElementById("ultraviolet")
-var stomp = document.getElementById("stomp")
 
 if (localStorage.getItem("proxy") !== null) {
 var currentproxy2 = currentproxy.toLowerCase()
@@ -141,22 +129,14 @@ if (proxy == "Rhodium") {
 rhodium.classList.add("proxysel")
 corrosion.classList.remove("proxysel")
 ultraviolet.classList.remove("proxysel")
-stomp.classList.remove("proxysel")
 } else if (proxy == "Corrosion") {
 rhodium.classList.remove("proxysel")
 ultraviolet.classList.remove("proxysel")
 corrosion.classList.add("proxysel")
-stomp.classList.remove("proxysel")
 } else if (proxy == "Ultraviolet") {
 rhodium.classList.remove("proxysel")
 corrosion.classList.remove("proxysel")
 ultraviolet.classList.add("proxysel")
-stomp.classList.remove("proxysel")
-} else if (proxy == "Stomp") {
-rhodium.classList.remove("proxysel")
-corrosion.classList.remove("proxysel")
-ultraviolet.classList.remove("proxysel")
-stomp.classList.add("proxysel")
 }
 }
 
