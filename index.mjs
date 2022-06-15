@@ -13,9 +13,9 @@ const config = require("./config.json")
 const port = process.env.PORT || config.port
 const Corrosion = require("./lib/server")
 import RhodiumProxy from 'Rhodium';
-const auth = config.auth
-const username = config.username
-const password = config.password
+const auth = process.env['auth']
+const username = process.env['username']
+const password = process.env['password']
 const users = {}
 users[username] = password
 const fetch = require("node-fetch");
