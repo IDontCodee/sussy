@@ -62,32 +62,7 @@
     {
         "title": "Geometry Dash",
         "image": "/games/images/geometrydash.png",
-        "location": "/games/files/geometry"
-    },
-  {
-        "title": "Friendly Fire",
-        "image": "/games/images/friendlyfire.jpg",
-        "location": "/games/files/friendlyfire"
-    },
-    {
-        "title": "Doodle Jump",
-        "image": "/games/images/doodle-jump.jpg",
-        "location": "/games/files/doodle-jump"
-    },
-    {
-        "title": "HexGL",
-        "image": "/games/images/hexgl.jpg",
-        "location": "/games/files/hexgl"
-    },
-    {
-        "title": "The Chroma Incident",
-        "image": "/games/images/chroma.jpg",
-        "location": "/games/files/chroma"
-    },
-   {
-        "title": "Chrome Dinosaur",
-        "image": "/games/images/chrome-dinosaur.jpg",
-        "location": "/games/files/dinosaur"
+        "location": "/games/files/geometrydash"
     },
     {
         "title": "Gopher Kart",
@@ -104,12 +79,6 @@
         "image": "/games/images/minekhan.png",
         "location": "/games/files/minekhan"
     },
-  {
-        "title": "Cookie",
-        "image": "/games/images/cookie-clicker.jpg",
-        "location": "/games/files/cookie"
-    },
-
     {
         "title": "Pacman",
         "image": "/games/images/pacman.jpg",
@@ -126,24 +95,34 @@
         "location": "/games/files/syobon-action"
     },
     {
-        "title": "Twitch Tetris",
-        "image": "/games/images/tetris.png",
-        "location": "/games/files/twitchtetris"
-    },
-    {
         "title": "2048",
         "image": "/games/images/2048.png",
         "location": "/games/files/2048"
     },
-  {
-        "title": "Retro Bowl",
-        "image": "/games/images/retro-bowl.jpg",
-        "location": "/games/files/retro-bowl"
+    {
+        "title": "Justfall.lol",
+        "image": "/games/images/justfall-lol.jpg",
+        "location": "/corrosion/gateway?url=justfall.lol"
     },
-  {
-        "title": "Imposter.io",
-        "image": "/games/images/imposter.png",
-        "location": "/corrosion/gateway?url=https://imposter.io"
+    {
+        "title": "Paper.io",
+        "image": "/games/images/paper-io.jpg",
+        "location": "/corrosion/gateway?url=paper-io.com"
+    },
+    {
+        "title": "Shell Shockers",
+        "image": "/games/images/shellshockers.jpg",
+        "location": "/corrosion/gateway?url=shellshock.io"
+    },
+    {
+        "title": "Zombs Royale",
+        "image": "/games/images/zombsroyale.jpg",
+        "location": "/corrosion/gateway?url=zombsroyale.io"
+    },
+    {
+        "title": "1v1.lol",
+        "image": "/games/images/1v1-lol.jpg",
+        "location": "/corrosion/gateway?url=1v1.lol"
     },
     {
         "title": "Achievement Unlocked",
@@ -153,27 +132,7 @@
     {
         "title": "Cubefield",
         "image": "/games/images/cubefield.jpeg",
-        "location": "/games/files/cubefield"
-    },
-      {
-        "title": "Among Us",
-        "image": "/games/images/among.jpg",
-        "location": "/games/files/sus"
-    },
-      {
-        "title": "Roblox",
-        "image": "/games/images/trash.png",
-        "location": "/corrosion/gateway?url=https://now.gg/play/roblox-corporation/5349/roblox"
-    },
-        {
-        "title": "Little Alchemy",
-        "image": "/games/images/littlealchemy.png",
-        "location": "/corrosion/gateway?url=https://littlealchemy.com"
-    },
-          {
-        "title": "Little Alchemy 2",
-        "image": "/games/images/alchemy2.jpg",
-        "location": "/corrosion/gateway?url=https://littlealchemy2.com"
+        "location": "/games/files/flash?swf=cubefield.swf"
     },
     {
         "title": "Retro - Coming Soon!",
