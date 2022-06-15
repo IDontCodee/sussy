@@ -44,7 +44,7 @@ justify-content: end;
 }
 
 .navname {
-    color: var(--light);
+    color: var(--light-text);
     font-size: 35px;
     padding: 8px;
     padding-left: 15px;
