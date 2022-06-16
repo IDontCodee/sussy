@@ -12,9 +12,16 @@
             }).then(() => {
 var url_string = window.location.href;
 var curl = new URL(url_string);
-var to = curl.searchParams.get("url");
-window.location.href = __uv$config.prefix + __uv$config.encodeUrl( to )
-})}
+var url = curl.searchParams.get("url");
+if (!isUrl(url)) url = 'https://www.google.com/search?q=' + url;
+else if (!(url.startsWith('https://') || url.startsWith('http://'))) {
+    url = 'http://' + url;   
+};
+window.location.href = __uv$config.prefix + __uv$config.encodeUrl(
+    url
+);
+});
+}
     </script>
     </body>
 </html>
