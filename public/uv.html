@@ -1,0 +1,11 @@
+<script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./uv.sw-handler.js', {
+                scope: '/'
+            }).then(() => {
+var url_string = window.location.href;
+var curl = new URL(url_string);
+var to = curl.searchParams.get("url");
+window.location.href = __uv$config.prefix + __uv$config.encodeUrl( to )
+})}
+    </script>
