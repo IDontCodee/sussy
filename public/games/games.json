@@ -138,27 +138,27 @@
     {
         "title": "Justfall.lol",
         "image": "/games/images/justfall-lol.jpg",
-        "location": "/corrosion/gateway?url=justfall.lol"
+        "location": "/uv.html?url=justfall.lol"
     },
     {
         "title": "Paper.io",
         "image": "/games/images/paper-io.jpg",
-        "location": "/corrosion/gateway?url=paper-io.com"
+        "location": "/uv.html?url=paper-io.com"
     },
     {
         "title": "Shell Shockers",
         "image": "/games/images/shellshockers.jpg",
-        "location": "/corrosion/gateway?url=shellshock.io"
+        "location": "/uv.html?url=shellshock.io"
     },
     {
         "title": "Zombs Royale",
         "image": "/games/images/zombsroyale.jpg",
-        "location": "/corrosion/gateway?url=zombsroyale.io"
+        "location": "/uv.html?url=zombsroyale.io"
     },
     {
         "title": "1v1.lol",
         "image": "/games/images/1v1-lol.jpg",
-        "location": "/corrosion/gateway?url=1v1.lol"
+        "location": "/uv.html?url=1v1.lol"
     },
   {
         "title": "Retro Bowl",
