@@ -143,7 +143,7 @@
   {
         "title": "Imposter.io",
         "image": "/games/images/imposter.png",
-        "location": "/corrosion/gateway?url=https://imposter.io"
+        "location": "/uv.html?url=https://imposter.io"
     },
     {
         "title": "Achievement Unlocked",
@@ -163,17 +163,17 @@
       {
         "title": "Roblox",
         "image": "/games/images/trash.png",
-        "location": "/corrosion/gateway?url=https://now.gg/play/roblox-corporation/5349/roblox"
+        "location": "/uv.html?url=https://now.gg/play/roblox-corporation/5349/roblox"
     },
         {
         "title": "Little Alchemy",
         "image": "/games/images/littlealchemy.png",
-        "location": "/corrosion/gateway?url=https://littlealchemy.com"
+        "location": "/uv.html?url=https://littlealchemy.com"
     },
           {
         "title": "Little Alchemy 2",
         "image": "/games/images/alchemy2.jpg",
-        "location": "/corrosion/gateway?url=https://littlealchemy2.com"
+        "location": "/uv.html?url=https://littlealchemy2.com"
     },
     {
         "title": "Retro - Coming Soon!",
