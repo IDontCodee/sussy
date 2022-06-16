@@ -156,6 +156,11 @@
         "location": "/uv.html?url=shellshock.io"
     },
     {
+        "title": "Krunker.io",
+        "image": "/games/images/krk.png",
+        "location": "/uv.html?url=krunker.io"
+    },
+    {
         "title": "Vex 3",
         "image": "/games/images/vex3.jpg",
         "location": "/games/files/vex3"
