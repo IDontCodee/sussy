@@ -31,6 +31,7 @@ const proxy = new Corrosion({
     requestMiddleware: [
         Corrosion.middleware.blacklist([
             "accounts.google.com",
+            "tiktok.com",
         ], "Page is blocked"),
     ]
 });
