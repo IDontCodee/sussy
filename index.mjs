@@ -93,5 +93,5 @@ app.use(function (req, res) {
 })
 
 app.listen(port, () => {
-  console.log(`Sussy is running at localhost:${port}`)
+  console.log(`The Impostor created a vent from the other side on port ${port}`)
 })
