@@ -1,76 +1,13 @@
 <div align="center">
-
 <img style="border-radius:50%" height="150px" src="https://raw.githubusercontent.com/IDontCodee/sussy/main/public/img/logo.svg">
-
-<h1>Sussy</h1>
-
-<p>Surf without web filters or restrictions. Made with style, Sussy is a rather fancy service dedicated to protecting your freedom from censorship.
-Read the documentation below to find out more</p>
-  
 </div>
 
 <p align="center">
 <a href="https://heroku.com/deploy?template=https://github.com/IDontCodee/Sussy"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/heroku2.svg"><img></a>
 </p>
 
-## Documentation
 
-
-- [Pages](#pages)
-- [Configuration](#configuration)
-- [FAQ](#faq)
-- [More](#more)
-  - [Credits](#credits)
-  - [Contributing](#contributing)
-
-
-## Pages
-
-- `/` Homepage
-- `/1` Arcade
-- `/2` Chatbox
-- `/3` Settings
-- `/4` Terms
-- `/5` Privacy
-- `/6` Documentation
-- `/7` Credits
-- `/8` Support and Contact
-- `/9` Youtube
-- `/404` 404 Error
-
-## Configuration
-
-**/public/js/go.js**
-
-```js
-var palladiumproxy = window.location.protocol + "//" + window.location.hostname + "/palladium/gateway?url="
-
-var corrosionproxy = window.location.protocol + "//" + window.location.hostname + "/corrosion/gateway?url="
-
-```
-`palladiumproxy` Location for Palladium proxy
-
-`corrosionproxy` Location for Corrosion proxy
-
-Custom Proxy Example:
-
-```js
-var palladiumproxy = "https://example.com/palladium/"
-```
-
-## FAQ
-
-**Captcha not working/issues**
-
-Captcha is only supported on Womginx, though the support is limited
-
-**Why is Discord not working properly?**
-
-Try using Womginx or Corrosion. Refreshing the page might help
-
-## More
-
-### Credits
+## Credits
 
 [Nebelung](https://github.com/Nebelung-Dev) - Owner and Main Developer
 
@@ -89,10 +26,6 @@ Try using Womginx or Corrosion. Refreshing the page might help
 [Divide](https://github.com/vibedivide) - SystemYA and Chatbox Creator
 
 [Shirt](https://github.com/shirt-dev) - Proxy Developer
-
-### Contributing
-
-See [CONTRIBUTING.md](https://github.com/IDontCodee/sussy/blob/main/CONTRIBUTING.md)
 
 Special Thanks To Quite A Fancy Emerald, Inspiration for Tsunami
 
