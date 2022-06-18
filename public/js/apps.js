@@ -1,6 +1,3 @@
-var gosurf = localStorage.getItem("go") || "default"
-document.body.setAttribute("go", gosurf)
-
 function searchapps() {
   var searchapps = document.getElementById("searchapps");
   var filter = searchapps.value.toLowerCase();

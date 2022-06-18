@@ -35,7 +35,6 @@
   <div tab="Tab" class="sidecard" onclick="setTab(this)">Tab</div>
   <div tab="Search" class="sidecard" onclick="setTab(this)">Search</div>
   <div tab="Appearance" class="sidecard" onclick="setTab(this)">Appearance</div>
-  <div tab="UI" class="sidecard" onclick="setTab(this)">UI</div>
   <div tab="App" class="pwacontent sidecard" onclick="setTab(this)">App</div>
   </div>
   
@@ -84,6 +83,16 @@
   <div class="tabbutton" id="brave" onclick="setsearch('Brave')">Brave</div>
   
   </div>
+
+  <div class="tabtitle">Go</div>
+  
+  <div class="tabbuttons">
+  
+  <div go="default" class="tabgo tabbutton" onclick="setgo('default')">Default</div>
+
+  <div go="classic" class="tabgo tabbutton" onclick="setgo('classic')">Classic</div>
+  
+  </div>
   
   </div>
   
@@ -116,36 +125,6 @@
   <div theme="midnight" class="tabtheme tabbutton" onclick="setapp('midnight')">Midnight</div>
 
   </div>
-  
-  <div class="tabtitle">CSS</div>
-  
-  <input id="setcssinput" class="tabinput" placeholder="Enter CSS code" onkeydown="if(event.keyCode == 13){setcss(this.value)}">
-  
-  </div>
-  
-  <div tab="UI" class="tabcontent">
-  
-  <div class="tabtitle">Mode</div>
-  
-  <div class="tabbuttons">
-  
-  <div mode="default" class="tabmode tabbutton" onclick="setmode('default')">Default</div>
-  
-  <div mode="simple" class="tabmode tabbutton" onclick="setmode('simple')">Simple</div>
-
-  <div mode="about" class="tabmode tabbutton" onclick="setmode('about')">About:Blank</div>
-
-  </div>
-
-  <div class="tabtitle">Go</div>
-  
-  <div class="tabbuttons">
-  
-  <div go="default" class="tabgo tabbutton" onclick="setgo('default')">Default</div>
-
-  <div go="classic" class="tabgo tabbutton" onclick="setgo('classic')">Classic</div>
-  
-  </div>
 
   <div class="tabtitle">Background</div>
   
@@ -160,7 +139,12 @@
   <div bg="squares" class="tabbg tabbutton" onclick="setbg('squares')">Squares</div>
   </div>
   
+  <div class="tabtitle">CSS</div>
+  
+  <input id="setcssinput" class="tabinput" placeholder="Enter CSS code" onkeydown="if(event.keyCode == 13){setcss(this.value)}">
+  
   </div>
+  
 
   <div tab="App" class="pwacontent tabcontent">
   
@@ -170,6 +154,14 @@
   
   <div class="tabbutton" onclick="installPWA()">Install</div>
   
+  </div>
+
+  <div class="tabtitle">about:blank cloak</div>
+
+  <div class="tabbuttons">
+
+  <div class="tabbutton" onClick="goBlank()">Go about:blank</div>
+
   </div>
 
   </div>
