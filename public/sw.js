@@ -1,4 +1,4 @@
-var cacheName = 'tsunami';
+var cacheName = 'sussy';
 var filesToCache = [
   '/sw.js'
 ];
