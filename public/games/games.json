@@ -121,11 +121,6 @@
         "location": "/games/files/space-invaders"
     },
     {
-        "title": "Super Mario 64",
-        "image": "/games/images/sm64.jpg",
-        "location": "/games/files/sm64"
-    },
-    {
         "title": "Syobon Action",
         "image": "/games/images/syobon-action.jpg",
         "location": "/games/files/syobon-action"
