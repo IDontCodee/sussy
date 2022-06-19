@@ -17,7 +17,7 @@
       "name": "Apps",
       "url": "/1",
       "icons": [{
-         "src": "/img/apps.jpg", "sizes": "512x512"
+         "src": "/img/apps.png", "sizes": "512x512"
        }]
     },
     {
