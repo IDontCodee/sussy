@@ -18,6 +18,16 @@ document.querySelector(".tabcontent[tab='" + tab.getAttribute("tab") + "']").cla
 window.location.hash = "#" + tab.getAttribute("tab") 
 }
 
+function goBlank() {
+  var page = new ABC({
+    "type": "blank"
+})
+page.setType("blank")
+page.setUrl(window.location.href)
+page.open()
+window.location.replace("https://google.com")
+}
+
 var search1 = localStorage.getItem("search")
 var google = document.getElementById("google")
 var duckduckgo = document.getElementById("duckduckgo")
