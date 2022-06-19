@@ -90,11 +90,6 @@
         "location": "/games/files/dinosaur"
     },
     {
-        "title": "Radius Raid",
-        "image": "/games/images/radiusraid.jpg",
-        "location": "/games/files/radius-raid"
-    },
-    {
         "title": "Gopher Kart",
         "image": "/games/images/gopher-kart.png",
         "location": "/games/files/gopher-kart"
