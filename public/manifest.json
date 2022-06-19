@@ -14,6 +14,13 @@
   "theme_color": "black",
    "shortcuts": [
     {
+      "name": "Apps",
+      "url": "/1",
+      "icons": [{
+         "src": "/img/apps.jpg", "sizes": "512x512"
+       }]
+    },
+    {
       "name": "Arcade",
       "url": "/2",
       "icons": [{
