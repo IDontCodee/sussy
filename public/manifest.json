@@ -15,14 +15,14 @@
    "shortcuts": [
     {
       "name": "Arcade",
-      "url": "/1",
+      "url": "/2",
       "icons": [{
          "src": "/img/a.jpg", "sizes": "612x612"
        }]
     },
      {
       "name": "Chat",
-      "url": "/2",
+      "url": "/6",
       "icons": [{
          "src": "/img/c.png", "sizes": "256x256"
        }]
