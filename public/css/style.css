@@ -68,10 +68,10 @@ color: var(--light-text);
 .footer {
 color :var(--light-text);
 position: fixed;
-bottom: 14px;
+bottom: 3px;
 text-align: center;
+width: 100%;
 font-size: 12px;
-right: 14px;
 }
 
 .link {
