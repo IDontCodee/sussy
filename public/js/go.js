@@ -43,7 +43,7 @@ return corrosionproxy + url
 } else if (currentproxy == "Ultraviolet") {
 return ultravioletproxy + __uv$config.encodeUrl(url)
 } else if (currentproxy == "Stomp") {
-  return stompproxy + Stomp.html(StompSearch.query(url))
+return stompproxy + Stomp.html(StompSearch.query(url))
   }
 }
 
@@ -132,20 +132,23 @@ if (proxy == "Rhodium") {
 rhodium.classList.add("proxysel")
 corrosion.classList.remove("proxysel")
 ultraviolet.classList.remove("proxysel")
+stomp.classList.remove("proxysel")
 } else if (proxy == "Corrosion") {
 rhodium.classList.remove("proxysel")
 ultraviolet.classList.remove("proxysel")
 corrosion.classList.add("proxysel")
+stomp.classList.remove("proxysel")
 } else if (proxy == "Ultraviolet") {
 rhodium.classList.remove("proxysel")
 corrosion.classList.remove("proxysel")
 ultraviolet.classList.add("proxysel")
+stomp.classList.remove("proxysel")
 } else if (proxy == "Stomp") {
-  rhodium.classList.remove("proxysel")
-  corrosion.classList.remove("proxysel")
-  ultraviolet.classList.remove("proxysel")
-  stomp.classList.add("proxysel")
-  }
+rhodium.classList.remove("proxysel")
+corrosion.classList.remove("proxysel")
+ultraviolet.classList.remove("proxysel")
+stomp.classList.add("proxysel")
+}
 }
 
 function hidesugg() {
