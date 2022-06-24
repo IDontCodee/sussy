@@ -1,5 +1,5 @@
 self.__uv$config = {
-    prefix: 'https://dick-grabber.com/bare/',
+    prefix: '/bare/',
     bare: '/bare/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
