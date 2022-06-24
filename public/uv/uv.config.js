@@ -1,6 +1,6 @@
 self.__uv$config = {
     prefix: '/ultraviolet/',
-    bare: '/bare/',
+    bare: 'https://sussy-gs-production.up.railway.app/bare/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/uv/uv.handler.js',
