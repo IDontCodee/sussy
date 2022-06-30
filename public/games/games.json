@@ -185,6 +185,11 @@
         "image": "/games/images/retro-bowl.jpg",
         "location": "/games/files/retro-bowl"
     },
+    {
+        "title": "Fireboy And Watergirl",
+        "image": "/games/images/fireboy-and-watergirl-forest-temple.jpg",
+        "location": "/games/files/fireboy-and-watergirl-forest-temple"
+    },
   {
         "title": "Imposter.io",
         "image": "/games/images/imposter.png",

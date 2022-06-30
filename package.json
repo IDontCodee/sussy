@@ -8,7 +8,8 @@
     "description": "Tsunami is a official Fog Network proxy site, made to access the blocked web",
     "main": "index.js",
     "scripts": {
-        "start": "node index.js"
+        "start": "node index.js",
+        "frontend": "http-server public"
     },
     "keywords": [
         "javascript",
