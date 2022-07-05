@@ -146,6 +146,11 @@
         "location": "/uv.html?url=paper-io.com"
     },
     {
+        "title": "Skribbl.io",
+        "image": "/games/images/skiribbl.png",
+        "location": "/uv.html?url=skribbl.io"
+    },
+    {
         "title": "Shell Shockers",
         "image": "/games/images/shellshockers.jpg",
         "location": "/uv.html?url=shellshock.io"
@@ -206,21 +211,31 @@
         "location": "/games/files/cubefield"
     },
       {
-        "title": "Among Us",
+        "title": "Among Us Scratch",
         "image": "/games/images/among.jpg",
         "location": "/games/files/sus"
     },
-      {
+    {
         "title": "Roblox",
         "image": "/games/images/trash.png",
         "location": "/uv.html?url=https://now.gg/play/roblox-corporation/5349/roblox"
     },
-        {
+    {
+        "title": "Fortnite",
+        "image": "/games/images/fn.png",
+        "location": "/uv.html?url=https://play.geforcenow.com/mall/#/deeplink?game-id=46bfab06-d864-465d-9e56-2d9e45cdee0a"
+    },
+    {
+        "title": "Splitgate",
+        "image": "/games/images/sg.jpg",
+        "location": "/uv.html?url=https://play.geforcenow.com/mall/#/deeplink?game-id=39699fb7-5a05-41e6-86b2-3cd6fd6c459c"
+    },
+    {
         "title": "Little Alchemy",
         "image": "/games/images/littlealchemy.png",
         "location": "/uv.html?url=https://littlealchemy.com"
     },
-          {
+    {
         "title": "Little Alchemy 2",
         "image": "/games/images/alchemy2.jpg",
         "location": "/uv.html?url=https://littlealchemy2.com"
