@@ -37,16 +37,16 @@
     {
         "title": "More Games",
         "image": "/apps/images/moregames.png",
-        "location": "https://gfiles-fork-production.up.railway.app"
+        "location": "https://sussy-gs-production.up.railway.app"
     },
     {
         "title": "Geforce Now",
         "image": "/apps/images/gfnow.png",
         "location": "/apps/apps.html#aHR0cHM6Ly9wbGF5LmdlZm9yY2Vub3cuY29t"
-        },
-        {
+    },
+    {
             "title": "Y8",
             "image": "/apps/images/y8.png",
             "location": "/apps/apps.html#aHR0cHM6Ly93d3cueTguY29t"
-        }
+    }
 ]
