@@ -21,7 +21,7 @@ users[username] = password
 const fetch = require("node-fetch");
 import Server from 'bare-server-node';
 
-const bare = new Server('/bare/', '');
+const bare = new Server('/not-sus-server/', '');
 
 const proxy = new Corrosion({
     prefix: "/corrosion/",

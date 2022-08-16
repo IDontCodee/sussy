@@ -7,7 +7,7 @@ var ultravioletproxy = window.location.protocol + "//" + window.location.hostnam
 var stompproxy = window.location.protocol + "//" + window.location.hostname
 
 if ('serviceWorker' in navigator) {
-window.navigator.serviceWorker.register('./uv.js', {scope: __uv$config.prefix})
+window.navigator.serviceWorker.register('/uv.js', {scope: __uv$config.prefix})
 }
 
 var Stomp = new StompBoot({
@@ -30,7 +30,7 @@ function searchurl(url) {
   } else if (search == "Brave") {
     pxyopen("https://search.brave.com/search?q=" + url)
   } else {
-    console.log("Error with search")
+    console.log("[sussy] Error with search")
   }
 }
 
