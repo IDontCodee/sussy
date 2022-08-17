@@ -68,7 +68,7 @@ page.open()
 function go(url) {
 if (url !== '') {
 if (url.includes('.')) {
-pxyopen(url)
+pxyopen('http://'+ url)
 } else if (url.startsWith('https://')) {
 pxyopen(url)
 } else if (url.startsWith('http://')) {
