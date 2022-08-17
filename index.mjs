@@ -85,7 +85,7 @@ app.use(function (req, res) {
       proxy.request(req,res);
     } else if (req.url.startsWith(Rhodium.prefix)) {
       return Rhodium.request(req, res)
-    } else if (req.url.startsWith("/bare/")) {
+    } else if (req.url.startsWith("/not-sus-server/")) {
       return bare.route_request(req, res)
     } else {
       res.status(404).sendFile("404.html", {root: "./public"});
