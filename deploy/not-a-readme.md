@@ -6,7 +6,6 @@
 <a href="https://heroku.com/deploy?template=https://github.com/IDontCodee/Sussy"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/heroku2.svg"><img></a>
 </p>
 
-
 ## Credits
 
 [Nebelung](https://github.com/Nebelung-Dev) - Owner and Main Developer
