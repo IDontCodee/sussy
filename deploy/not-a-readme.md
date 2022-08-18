@@ -6,6 +6,17 @@
 <a href="https://heroku.com/deploy?template=https://github.com/IDontCodee/Sussy"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/heroku2.svg"><img></a>
 </p>
 
+
+## It's a meme at this point
+
+```json
+    {
+        "title": "Retro - Coming Soon!",
+        "image": "https://avatars.githubusercontent.com/u/87547936",
+        "location": "/"
+    }
+```
+
 ## Credits
 
 [Nebelung](https://github.com/Nebelung-Dev) - Owner and Main Developer

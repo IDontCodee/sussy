@@ -138,27 +138,27 @@
     {
         "title": "Justfall.lol",
         "image": "/games/images/justfall-lol.jpg",
-        "location": "/uv.html?url=justfall.lol"
+        "location": "/games/load-uv.html?url=justfall.lol"
     },
     {
         "title": "Paper.io",
         "image": "/games/images/paper-io.jpg",
-        "location": "/uv.html?url=paper-io.com"
+        "location": "/games/load-uv.html?url=paper-io.com"
     },
     {
         "title": "Skribbl.io",
         "image": "/games/images/skiribbl.png",
-        "location": "/uv.html?url=skribbl.io"
+        "location": "/games/load-uv.html?url=skribbl.io"
     },
     {
         "title": "Shell Shockers",
         "image": "/games/images/shellshockers.jpg",
-        "location": "/uv.html?url=shellshock.io"
+        "location": "/games/load-uv.html?url=shellshock.io"
     },
     {
         "title": "Krunker.io",
         "image": "/games/images/krk.png",
-        "location": "/uv.html?url=krunker.io"
+        "location": "/games/load-uv.html?url=krunker.io"
     },
     {
         "title": "Vex 3",
@@ -178,12 +178,12 @@
     {
         "title": "Zombs Royale",
         "image": "/games/images/zombsroyale.jpg",
-        "location": "/uv.html?url=zombsroyale.io"
+        "location": "/games/load-uv.html?url=zombsroyale.io"
     },
     {
         "title": "1v1.lol",
         "image": "/games/images/1v1-lol.jpg",
-        "location": "/uv.html?url=1v1.lol"
+        "location": "/games/load-uv.html?url=1v1.lol"
     },
   {
         "title": "Retro Bowl",
@@ -198,7 +198,7 @@
   {
         "title": "Imposter.io",
         "image": "/games/images/imposter.png",
-        "location": "/uv.html?url=https://imposter.io"
+        "location": "/games/load-uv.html?url=https://imposter.io"
     },
     {
         "title": "Achievement Unlocked",
@@ -218,31 +218,26 @@
     {
         "title": "Roblox",
         "image": "/games/images/trash.png",
-        "location": "/uv.html?url=https://now.gg/play/roblox-corporation/5349/roblox"
+        "location": "/games/load-uv.html?url=https://now.gg/play/roblox-corporation/5349/roblox"
     },
     {
         "title": "Fortnite",
         "image": "/games/images/fn.png",
-        "location": "/uv.html?url=https://play.geforcenow.com/mall/#/deeplink?game-id=46bfab06-d864-465d-9e56-2d9e45cdee0a"
+        "location": "/games/load-uv.html?url=https://play.geforcenow.com/mall/#/deeplink?game-id=46bfab06-d864-465d-9e56-2d9e45cdee0a"
     },
     {
         "title": "Splitgate",
         "image": "/games/images/sg.jpg",
-        "location": "/uv.html?url=https://play.geforcenow.com/mall/#/deeplink?game-id=39699fb7-5a05-41e6-86b2-3cd6fd6c459c"
+        "location": "/games/load-uv.html?url=https://play.geforcenow.com/mall/#/deeplink?game-id=39699fb7-5a05-41e6-86b2-3cd6fd6c459c"
     },
     {
         "title": "Little Alchemy",
         "image": "/games/images/littlealchemy.png",
-        "location": "/uv.html?url=https://littlealchemy.com"
+        "location": "/games/load-uv.html?url=https://littlealchemy.com"
     },
     {
         "title": "Little Alchemy 2",
         "image": "/games/images/alchemy2.jpg",
-        "location": "/uv.html?url=https://littlealchemy2.com"
-    },
-    {
-        "title": "Retro - Coming Soon!",
-        "image": "https://avatars.githubusercontent.com/u/87547936",
-        "location": "/"
+        "location": "/games/load-uv.html?url=https://littlealchemy2.com"
     }
 ]
