@@ -31,7 +31,7 @@ const proxy = new Corrosion({
     requestMiddleware: [
         Corrosion.middleware.blacklist([
             "accounts.google.com",
-        ], "Page is blocked"),
+        ], "Page is not allowed here or is not compatible"),
     ]
 });
 

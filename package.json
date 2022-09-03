@@ -1,11 +1,11 @@
 {
-    "name": "tsunami",
+    "name": "sussy",
     "version": "1.0.0",
-    "repository": "https://github.com/FogNetwork/Tsunami",
+    "repository": "https://github.com/IDontCodee/sussy",
     "bugs": {
-        "url": "https://github.com/FogNetwork/Tsunami/issues"
+        "url": "https://github.com/IDontCodee/sussy/issues"
     },
-    "description": "Tsunami is a official Fog Network proxy site, made to access the blocked web",
+    "description": "Sussy is a official Sus Network proxy site, made to access the blocked web",
     "main": "index.js",
     "scripts": {
         "start": "node index.js",
@@ -15,15 +15,14 @@
         "javascript",
         "proxy",
         "bypass",
-        "proxy-site",
-        "unblocker",
-        "fog-network"
+        "proxy-site"
     ],
-    "author": "Fog Network",
+    "author": "Sus Network",
     "license": "MIT",
     "dependencies": {
         "acorn-hammerhead": "^0.5.0",
         "alloyproxy": "^1.1.0",
+        "bare-server-node": "github:tomphttp/bare-server-node",
         "bindlestiff": "^0.1.0",
         "box2d-events": "0.0.1",
         "box2d-player": "^0.1.0",
@@ -47,7 +46,7 @@
         "lsblocker": "^1.0.2",
         "mime": "^3.0.0",
         "ndarray-continuous": "^0.4.2",
-        "ndarray-fill": "^1.0.2",
+        "ndarray-fill": "^0.1.0",
         "node-fetch": "^2.1.0",
         "object-pool": "^0.2.0",
         "opn": "^6.0.0",
@@ -57,6 +56,7 @@
         "pointer-trap": "0.0.0",
         "raf": "^3.4.1",
         "request": "^2.88.2",
+        "Rhodium": "github:ludicrousdevelopment/rhodium",
         "sys-proxy": "^1.0.3",
         "ticker": "^0.1.0",
         "unblocker": "^2.3.0",
@@ -64,8 +64,6 @@
         "watchify": "^4.0.0",
         "webpack": "^5.58.0",
         "ws": "^8.2.3",
-        "zeros": "^1.0.0",
-        "bare-server-node": "github:tomphttp/bare-server-node",
-        "Rhodium": "github:ludicrousdevelopment/rhodium"
+        "zeros": "^1.0.0"
     }
 }
