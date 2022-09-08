@@ -1,6 +1,6 @@
 {
     "name": "sussy",
-    "version": "1.0.0",
+    "version": "2.5.0",
     "repository": "https://github.com/IDontCodee/sussy",
     "bugs": {
         "url": "https://github.com/IDontCodee/sussy/issues"
@@ -9,7 +9,7 @@
     "main": "index.js",
     "scripts": {
         "start": "node index.js",
-        "frontend": "http-server public"
+        "frontend": "http-server e/public"
     },
     "keywords": [
         "javascript",
