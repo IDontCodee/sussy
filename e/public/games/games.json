@@ -140,6 +140,11 @@
         "image": "/games/images/justfall-lol.jpg",
         "location": "/games/load-uv.html?url=justfall.lol"
     },
+        {
+        "title": "Justfall.lol",
+        "image": "/games/images/justfall-lol.jpg",
+        "location": "/games/load-uv.html?url=https://now.gg/apps/kitka-games/7999/stumble-guys.html"
+    },
     {
         "title": "Paper.io",
         "image": "/games/images/paper-io.jpg",
