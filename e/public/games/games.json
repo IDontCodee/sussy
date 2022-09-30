@@ -40,6 +40,11 @@
         "location": "/games/files/astray"
     },
     {
+        "title": "Slope",
+        "image": "/games/images/slope.jpg",
+        "location": "/games/files/slope"
+    },
+    {
         "title": "Algaes Escapade",
         "image": "/games/images/algaes-escapade.png",
         "location": "/games/files/algaes-escapade"
