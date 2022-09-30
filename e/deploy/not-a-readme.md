@@ -3,7 +3,8 @@
 </div>
 
 <p align="center">
-<a href="https://heroku.com/deploy?template=https://github.com/IDontCodee/Sussy"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/heroku2.svg"><img></a>
+<a href="https://heroku.com/deploy?template=https://github.com/IDontCodee/sussy"><img height="30px" src="https://raw.githubusercontent.com/IDontCodee/sussy/main/e/deploy/heroku.svg"><img></a>
+<a href="https://railway.app/new/template?template=https://github.com/IDontCodee/sussy"><img height="30px" src="https://img.shields.io/badge/Railway-%234f0599.svg?style=for-the-badge&logo=railway&logoColor=white"><img></a>
 </p>
 
 
@@ -33,7 +34,7 @@
 
 [Binary Person](https://github.com/binary-person) - Creator of Womginx
 
-[Divide](https://github.com/vibedivide) - SystemYA and Chatbox Creator
+[Divide](https://github.com/vibedivide) - SystemYA
 
 [Shirt](https://github.com/shirt-dev) - Proxy Developer
 

@@ -6,22 +6,34 @@ MIT license: https://opensource.org/licenses/MIT
 
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
+
+// Config
+require('dotenv').config()
+const config = require("./config.json")
+const port = process.env.PORT || config.port
+const barePrefix = "/not-sus-server/" || process.env['barePath']
+
+// Auth
+const auth = process.env['auth'] || "false"
+const username = process.env['username'] || "user"
+const password = process.env['password'] || "secret"
+const users = {}
+users[username] = password
+
+const fetch = require("node-fetch");
+
+// Web Server
 const express = require("express")
 const app = express()
 const basicAuth = require("express-basic-auth");
-const config = require("./config.json")
-const port = process.env.PORT || config.port
-const Corrosion = require("./lib/server")
-import RhodiumProxy from 'Rhodium';
-const auth = process.env['auth']
-const username = process.env['username'] || config.username
-const password = process.env['password'] || config.password
-const users = {}
-users[username] = password
-const fetch = require("node-fetch");
-import Server from 'bare-server-node';
 
-const bare = new Server('/not-sus-server/', '');
+// PX imports
+const Corrosion = require("./corrosion/server")
+const { xor } = require("./corrosion/codec")
+import RhodiumProxy from 'Rhodium';
+import createServer from '@tomphttp/bare-server-node';
+
+const bare = createServer(barePrefix);
 
 const proxy = new Corrosion({
     prefix: "/co/",
@@ -29,9 +41,7 @@ const proxy = new Corrosion({
     title: "sussy",
     forceHttps: true,
     requestMiddleware: [
-        Corrosion.middleware.blacklist([
-            "accounts.google.com",
-        ], "Page is not allowed here or is not compatible"),
+        Corrosion.middleware.blacklist([ "accounts.google.com" ], "Page is not allowed here or is not compatible"),
     ]
 });
 
@@ -80,13 +90,20 @@ res.send(suggestions)
 getsuggestions()
 });
 
+app.get("/URIconfig", function(req, res) {
+res.send({
+  DC: process.env['INVITE_URL'] || "example.com",
+  WD: "/co/" +  xor.encode(process.env['CHATBOX_URL'] || "example.com")
+  })
+})
+
 app.use(function (req, res) {
     if (req.url.startsWith(proxy.prefix)) {
       proxy.request(req,res);
     } else if (req.url.startsWith(Rhodium.prefix)) {
       return Rhodium.request(req, res)
-    } else if (req.url.startsWith("/not-sus-server/")) {
-      return bare.route_request(req, res)
+    } else if (req.url.startsWith(barePrefix)) {
+      return bare.routeRequest(req, res)
     } else {
       res.status(404).sendFile("404.html", {root: config.ROOT});
     }
