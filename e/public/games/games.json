@@ -40,6 +40,11 @@
         "location": "/games/files/astray"
     },
     {
+        "title": "Slope",
+        "image": "/games/images/slope.jpg",
+        "location": "/games/files/slope"
+    },
+    {
         "title": "Algaes Escapade",
         "image": "/games/images/algaes-escapade.png",
         "location": "/games/files/algaes-escapade"
@@ -142,7 +147,7 @@
     },
         {
         "title": "Stumble Guys",
-        "image": "/games/images/justfall-lol.jpg",
+        "image": "/games/images/download.jpeg",
         "location": "/games/load-uv.html?url=https://now.gg/apps/kitka-games/7999/stumble-guys.html"
     },
     {
