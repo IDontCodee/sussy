@@ -1,5 +1,8 @@
 {
     "port": "8080",
     "ROOT": "./e/public",
-    "chromebook": "true"
+     "auth": "true",
+    "username": "user",
+    "password": "secret",
+    "chromebook": "false"
 }
