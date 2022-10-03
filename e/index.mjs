@@ -15,8 +15,8 @@ const barePrefix = "/not-sus-server/" || process.env['barePath']
 
 // Auth
 const auth = process.env['auth'] || "true"
-const username = process.env['username'] || "user"
-const password = process.env['password'] || "secret"
+const username = process.env['username'] || "sussy"
+const password = process.env['password'] || "proxy"
 const users = {}
 users[username] = password
 
