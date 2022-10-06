@@ -14,9 +14,9 @@ const port = process.env.PORT || config.port
 const barePrefix = "/not-sus-server/" || process.env['barePath']
 
 // Auth
-const auth = process.env['auth'] || "true"
-const username = process.env['username'] || "sussy"
-const password = process.env['password'] || "proxy"
+const auth = process.env['auth'] || "false"
+const username = process.env['username'] || "user"
+const password = process.env['password'] || "secret"
 const users = {}
 users[username] = password
 
