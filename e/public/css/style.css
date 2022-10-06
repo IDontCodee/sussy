@@ -834,6 +834,16 @@ a {
     user-select: none;
 }
 
+.nav-ad-block {
+    font-family: Material Icons;
+    color: var(--highlight);
+    font-size: 25px;
+    cursor: pointer;
+    padding: 7px;
+    margin: 5px;
+    user-select: none;
+}
+
 #omnibox {
     display: flex;
     align-items: center;
