@@ -150,6 +150,11 @@
         "image": "/games/images/download.jpeg",
         "location": "/games/load-uv.html?url=https://now.gg/apps/kitka-games/7999/stumble-guys.html"
     },
+            {
+        "title": "Minecraft",
+        "image": "/games/images/images.jpeg",
+        "location": "/games/load-uv.html?url=https://now.gg/apps/mojang/2534/minecraft-trial.html"
+    },
     {
         "title": "Paper.io",
         "image": "/games/images/paper-io.jpg",

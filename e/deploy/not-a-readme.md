@@ -1,5 +1,5 @@
 <div align="center">
-<img style="border-radius:50%" height="150px" src="https://raw.githubusercontent.com/IDontCodee/sussy/main/e/public/img/logo.svg">
+<img src="https://socialify.git.ci/IDontCodee/sussy/image?description=1&language=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2FIDontCodee%2Fsussy%2Fmain%2Fe%2Fpublic%2Fimg%2Flogo.svg&name=1&owner=1&pattern=Solid&theme=Light" alt="sussy" width="640" height="320" />
 </div>
 
 <p align="center">
