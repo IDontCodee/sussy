@@ -23,7 +23,10 @@ users[username] = password
 const fetch = require("node-fetch");
 
 // Web Server
-const express = require("express")
+
+import http from 'http';
+import express from 'express'
+const httpPatch = http.createServer();
 const app = express()
 const basicAuth = require("express-basic-auth");
 
@@ -109,6 +112,18 @@ app.use(function (req, res) {
     }
 })
 
-app.listen(port, () => {
+// Bad patch for dumb issue
+
+httpPatch.on('request', (req, res) => {
+  if (bare.shouldRoute(req)) { bare.routeRequest(req, res) } else { app(req, res) }
+})
+
+httpPatch.on('upgrade', (req, socket, head) => {
+  if (bare.shouldRoute(req, socket, head)) { bare.routeUpgrade(req, socket, head) } else { socket.end() }
+})
+
+httpPatch.on('listening', () => {
   console.log(`The Impostor created a vent from the other side on port ${port}`)
 })
+
+httpPatch.listen({ port: port, })
