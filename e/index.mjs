@@ -100,19 +100,19 @@ res.send({
 })
 
 app.use(function (req, res) {
-    if (req.url.startsWith(proxy.prefix)) {
-      proxy.request(req,res);
-    } else if (req.url.startsWith(Rhodium.prefix)) {
-      return Rhodium.request(req, res)
-    } else {
-      res.status(404).sendFile("404.html", {root: config.ROOT});
-    }
+    res.status(404).sendFile("404.html", {root: config.ROOT});
 })
 
 // Bad patch for dumb issue
 
 httpPatch.on('request', (req, res) => {
-  if (bare.shouldRoute(req)) { bare.routeRequest(req, res) } else { app(req, res) }
+  if (bare.shouldRoute(req)) {
+    bare.routeRequest(req, res)
+  } else if(req.url.startsWith(proxy.prefix)) {
+    proxy.request(req,res);
+  } else if(req.url.startsWith(Rhodium.prefix)) {
+    Rhodium.request(req, res)
+  } else { app(req, res) }
 })
 
 httpPatch.on('upgrade', (req, socket, head) => {
