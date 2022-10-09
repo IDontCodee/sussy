@@ -105,8 +105,6 @@ app.use(function (req, res) {
       proxy.request(req,res);
     } else if (req.url.startsWith(Rhodium.prefix)) {
       return Rhodium.request(req, res)
-    } else if (bare.shouldRoute(req)) {
-      return bare.routeRequest(req, res)
     } else {
       res.status(404).sendFile("404.html", {root: config.ROOT});
     }
