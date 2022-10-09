@@ -23,7 +23,6 @@ users[username] = password
 const fetch = require("node-fetch");
 
 // Web Server
-
 import http from 'http';
 import express from 'express'
 const httpPatch = http.createServer();
