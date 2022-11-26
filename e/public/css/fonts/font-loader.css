@@ -12,7 +12,7 @@ Path to fonts: /css/fonts/
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('/css/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    src: url('/css/fonts/Roboto-Regular.ttf') format('truetype');
 }
 
 /* quicksand-regular - latin */
@@ -21,7 +21,7 @@ Path to fonts: /css/fonts/
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url('/css/fonts/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
+    src: url('/css/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
 }
 
 /* ubuntu-mono-regular - latin */
@@ -30,7 +30,7 @@ Path to fonts: /css/fonts/
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('/css/fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf') format('truetype');
+    src: url('/css/fonts/UbuntuMono-Regular.ttf') format('truetype');
 }
 
 /* montserrat-regular - latin */
@@ -39,7 +39,7 @@ Path to fonts: /css/fonts/
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('/css/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    src: url('/css/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
 }
 
 /* raleway-regular - latin */
@@ -48,7 +48,7 @@ Path to fonts: /css/fonts/
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('/css/fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+    src: url('/css/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
 }
 
 /* Material Icons */
@@ -57,7 +57,7 @@ Path to fonts: /css/fonts/
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
-    src: url(/css/fonts/Material-Icons/MaterialIcons-Regular.ttf) format('truetype');
+    src: url('/css/fonts/Material-Icons/MaterialIcons-Regular.ttf') format('truetype');
   }
 
 .material-icons {
