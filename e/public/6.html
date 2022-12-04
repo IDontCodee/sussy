@@ -40,12 +40,14 @@
 <script>
     const theBox = document.getElementById('chatbox')
     __sussy$.getURIconfig()
-    .then(json => {theBox.src = json.WDURI})
+    .then(json => {theBox.src = `/data-load-uv.html#${btoa(json.WDURI)}`})
 
     function reloadch() {
         theBox.contentWindow.location.reload()
     }
 </script>
+<script src="js/sw-scripts/uv.bundle.js"></script>
+<script src="js/sw-scripts/uv.config.js"></script>
 <script src="/js/index.js"></script>
 </body>
 </html>

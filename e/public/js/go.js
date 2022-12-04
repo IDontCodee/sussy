@@ -6,12 +6,12 @@ var useST
 if (__sussy$.config.usingPort) {
   useRHO = window.location.protocol + "//" + window.location.hostname + ":" + window.location.port + __sussy$.config._rho
   useCO = window.location.protocol + "//" + window.location.hostname + ":" + window.location.port + __sussy$.config._co
-  useSW = window.location.protocol + "//" + window.location.hostname + ":" + window.location.port + __uv$config.prefix
+  useSW = window.location.protocol + "//" + window.location.hostname + ":" + window.location.port + "/data-load-uv.html#"
   useST = window.location.protocol + "//" + window.location.hostname + window.location.port + ":"
 } else {
   useRHO = window.location.protocol + "//" + window.location.hostname + __sussy$.config._rho
   useCO = window.location.protocol + "//" + window.location.hostname + __sussy$.config._co
-  useSW = window.location.protocol + "//" + window.location.hostname + __uv$config.prefix
+  useSW = window.location.protocol + "//" + window.location.hostname + "/data-load-uv.html#"
   useST = window.location.protocol + "//" + window.location.hostname
 }
 
@@ -50,7 +50,7 @@ function getUsingForURI(url) {
   } else if (using == "usingCO") {
     return useCO + url
   } else if (using == "usingSW") {
-    return useSW + __uv$config.encodeUrl(url)
+    return useSW + btoa(url);
   } else if (using == "usingST") {
     return useST + Stomp.html(StompSearch.query(url))
   }

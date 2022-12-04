@@ -31,7 +31,6 @@ const basicAuth = require("express-basic-auth");
 
 // PX imports
 const Corrosion = require("./corrosion/server")
-const { xor } = require("./corrosion/codec")
 import RhodiumProxy from 'Rhodium';
 import createServer from '@tomphttp/bare-server-node';
 
@@ -77,11 +76,11 @@ app.use(express.static(config.ROOT, {
     extensions: ["html"]
 }));
 
-app.get("/", function(req, res){
+app.get("/", function(req, res) {
     res.sendFile("index.html", {root: config.ROOT});
 });
 
-app.get("/suggestions", function(req, res){
+app.get("/suggestions", async function(req, res) {
 async function getsuggestions() {
 var term = req.query.q || "";
 var response = await fetch("https://duckduckgo.com/ac/?q=" + term + "&type=list");
@@ -95,11 +94,11 @@ getsuggestions()
 app.get("/URIconfig", function(req, res) {
 res.send({
   DC: process.env['INVITE_URL'] || "example.com",
-  WD: "/co/" +  xor.encode(process.env['CHATBOX_URL'] || "example.com")
+  WD: process.env['CHATBOX_URL'] || "example.com"
   })
 })
 
-app.use(function (req, res) {
+app.use(function(req, res) {
     res.status(404).sendFile("404.html", {root: config.ROOT});
 })
 

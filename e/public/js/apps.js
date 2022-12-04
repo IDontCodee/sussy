@@ -94,12 +94,9 @@ async function fetchapps() {
   let response = await fetch("/apps/apps.json")
   let json = await response.json()
 
-  json.forEach((element, index) => {if(!_0x52b208.includes(new URL(atob(element.location.split('#')[1])).hostname)) {
-    if(element['isMoreStuff']) {
-      var location = __sussy$.config.moreStuffURI
-    } else {
-      var location = element.location
-    }
+  json.forEach((element, index) => { if(element['isMoreStuff']) { var location = __sussy$.config.moreStuffURI } else { var location = element.location }
+    var that; try { that = _0x52b208.includes(new URL(atob(location.split('#')[1])).hostname) } catch(err) {}
+    if(!that) {
     var appelm = document.createElement("div")
     appelm.className = "app"
     appelm.setAttribute("onclick", 'openapp(' + '"' + location + '"' + ')')
@@ -115,7 +112,7 @@ async function fetchapps() {
     titleelm.innerText = element.title
     titleelm.className = "appinfo"
     document.getElementsByClassName("app")[index].appendChild(titleelm)
-} else {var e =document.createElement('div');e.className="app";document.getElementById("app-container").appendChild(e)}})
+} else {document.getElementById("app-container").appendChild(document.createElement('div').className="app")}})
 }
 
 fetchapps()
