@@ -19,11 +19,9 @@ The variables to config are:
 
 ### Cloud-services
 
-For Heroku, edit config vars from your app’s `Settings` tab in the [Heroku Dashboard](https://dashboard.heroku.com/).
+For Render, From the [Render Dashboard](https://dashboard.render.com/), click on the service that you want to add the environment variable to. Then click on Environment in the left pane, and then click on Add Environment Variable.
 
-Image from Heroku's docs:
-
-![Config Vars in Dashboard](https://devcenter1.assets.heroku.com/article-images/321-imported-1443570183-321-imported-1443554644-389-original.jpg)
+![Service environment variables widget](https://render.com/static/000c3b72bd6bb16fbaa86bae150ea717/2b72d/service-key-value.png)
 
 For Railway, click into the variables tab.
 
