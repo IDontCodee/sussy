@@ -37,7 +37,7 @@
     {
         "title": "More Games",
         "image": "/apps/images/moregames.png",
-        "isMoreStuff": "true"
+        "location": "/data-load-uv.html#Z2ZpbGVzLWZvcmsucGxheWVyMTIzNDU2Nzg5LnJlcGwuY28="
     },
     {
         "title": "NoVNC",
