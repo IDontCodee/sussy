@@ -1,3 +1,8 @@
+function isUrl(val = '') {
+  if (/^http(s?):\/\//.test(val) || val.includes('.') && val.substr(0, 1) !== ' ') return true;
+  return false;
+};
+
 function searchapps() {
   var searchapps = document.getElementById("searchapps");
   var filter = searchapps.value.toLowerCase();
@@ -48,7 +53,7 @@ function setTabIcon(favicon) {
     navicon.src = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDJjNS41MiAwIDEwIDQuNDggMTAgMTBzLTQuNDggMTAtMTAgMTBTMiAxNy41MiAyIDEyIDYuNDggMiAxMiAyek00IDEyaDQuNGMzLjQwNy4wMjIgNC45MjIgMS43MyA0LjU0MyA1LjEyN0g5LjQ4OHYyLjQ3YTguMDA0IDguMDA0IDAgMDAxMC40OTgtOC4wODNDMTkuMzI3IDEyLjUwNCAxOC4zMzIgMTMgMTcgMTNjLTIuMTM3IDAtMy4yMDYtLjkxNi0zLjIwNi0yLjc1aC0zLjc0OGMtLjI3NC0yLjcyOC42ODMtNC4wOTIgMi44Ny00LjA5MiAwLS45NzUuMzI3LTEuNTk3LjgxMS0xLjk3QTguMDA0IDguMDA0IDAgMDA0IDEyeiIgZmlsbD0iIzNDNDA0MyIvPjwvc3ZnPg=="
   }
 }
-const _0x52b208 = [ "tiktok.com" ]
+const _0x52b208 = ["tiktok.com"]
 function closeapp() {
   var appframe = document.getElementById("appframe");
   var closeapp = document.getElementById("closeapp");
@@ -94,25 +99,40 @@ async function fetchapps() {
   let response = await fetch("/apps/apps.json")
   let json = await response.json()
 
-  json.forEach((element, index) => { if(element['isMoreStuff']) { var location = __sussy$.config.moreStuffURI } else { var location = element.location }
-    var that; try { that = _0x52b208.includes(new URL(atob(location.split('#')[1])).hostname) } catch(err) {}
-    if(!that) {
-    var appelm = document.createElement("div")
-    appelm.className = "app"
-    appelm.setAttribute("onclick", 'openapp(' + '"' + location + '"' + ')')
+  json.forEach((element, index) => {
+    var location, realloc, tmp;
+    if (element['isMoreStuff']) { location = __sussy$.config.moreStuffURI } else { location = element.location }
+    // Fix a error before it happens
+    try {
+      tmp = atob(location.split('#')[1]);
+      if (isUrl(tmp)) {
+        if (!(tmp.startsWith('https://') || tmp.startsWith('http://'))) { tmp = 'http://' + tmp; };
+        realloc = new URL(tmp);
+      } else realloc = tmp;
+    } catch (e) {
+      tmp = location;
+      if (isUrl(tmp)) {
+        if (!(tmp.startsWith('https://') || tmp.startsWith('http://'))) { tmp = 'http://' + tmp; };
+        realloc = new URL(tmp);
+      } else realloc = tmp;
+    }
+    if(_0x52b208.includes(realloc?.hostname)) { var appelm = document.createElement('div'); appelm.className = "app"; document.getElementById("app-container").appendChild(appelm); return; }
+      var appelm = document.createElement("div")
+      appelm.className = "app"
+      appelm.setAttribute("onclick", 'openapp(' + '"' + location + '"' + ')')
 
-    document.getElementById("app-container").appendChild(appelm)
+      document.getElementById("app-container").appendChild(appelm)
 
-    var imageelm = document.createElement("img")
-    imageelm.className = "appimg"
-    imageelm.src = element.image
-    document.getElementsByClassName("app")[index].appendChild(imageelm)
+      var imageelm = document.createElement("img")
+      imageelm.className = "appimg"
+      imageelm.src = element.image
+      document.getElementsByClassName("app")[index].appendChild(imageelm)
 
-    var titleelm = document.createElement("div")
-    titleelm.innerText = element.title
-    titleelm.className = "appinfo"
-    document.getElementsByClassName("app")[index].appendChild(titleelm)
-} else {document.getElementById("app-container").appendChild(document.createElement('div').className="app")}})
+      var titleelm = document.createElement("div")
+      titleelm.innerText = element.title
+      titleelm.className = "appinfo"
+      document.getElementsByClassName("app")[index].appendChild(titleelm)
+  })
 }
 
 fetchapps()

@@ -5,7 +5,7 @@
     "description": "Sussy is a official Sus Network proxy site, made to access the blocked web",
     "main": "index.js",
     "scripts": {
-        "start": "node index.js"
+        "start": "node e/index.mjs"
     },
     "keywords": [
         "javascript",

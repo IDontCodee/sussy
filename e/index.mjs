@@ -119,7 +119,15 @@ httpPatch.on('upgrade', (req, socket, head) => {
 })
 
 httpPatch.on('listening', () => {
-  console.log(`The Impostor created a vent from the other side on port ${port}`)
+  const addr = httpPatch.address();
+
+  console.log(`The Impostor created a vent from the other side on port ${addr.port}`)
+  console.log('');
+  console.log('You can now view it in your browser.')
+  /* Code for listing IPS from website-aio */
+  console.log(`Local: http://${addr.family === 'IPv6' ? `[${addr.address}]` : addr.address}:${addr.port}`);
+  try { console.log(`On Your Network: http://${address.ip()}:${addr.port}`); } catch (err) {/* Can't find LAN interface */};
+  if(process.env.REPL_SLUG && process.env.REPL_OWNER) console.log(`Replit: https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co`);
 })
 
 httpPatch.listen({ port: port, })
