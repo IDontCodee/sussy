@@ -20,7 +20,7 @@ const password = process.env['password'] || "secret"
 const users = {}
 users[username] = password
 
-const fetch = require("node-fetch");
+import fetch from 'node-fetch';
 
 // Web Server
 import http from 'http';
@@ -37,13 +37,13 @@ import createServer from '@tomphttp/bare-server-node';
 const bare = createServer(barePrefix);
 
 const proxy = new Corrosion({
-    prefix: "/co/",
-    codec: "xor",
-    title: "sussy",
-    forceHttps: true,
-    requestMiddleware: [
-        Corrosion.middleware.blacklist([ "accounts.google.com" ], "Page is not allowed here or is not compatible"),
-    ]
+  prefix: "/co/",
+  codec: "xor",
+  title: "sussy",
+  forceHttps: true,
+  requestMiddleware: [
+    Corrosion.middleware.blacklist(["accounts.google.com"], "Page is not allowed here or is not compatible"),
+  ]
 });
 
 proxy.bundleScripts();
@@ -54,69 +54,69 @@ const Rhodium = new RhodiumProxy({
   server: app,
   Corrosion: [true, proxy],
   title: "sussy"
-})
+});
 
 Rhodium.init();
 
-if (auth == "true") { 
-app.use(basicAuth({
+if (auth == "true") {
+  app.use(basicAuth({
     users,
     challenge: true,
     unauthorizedResponse: autherror
-}));
-}
+  }));
+};
 
 function autherror(req) {
-    return req.auth
-        ? ("Credentials " + req.auth.user + ":" + req.auth.password + " rejected")
-        : "Error"
-}
+  return req.auth
+    ? ("Credentials " + req.auth.user + ":" + req.auth.password + " rejected")
+    : "Error"
+};
 
 app.use(express.static(config.ROOT, {
-    extensions: ["html"]
+  extensions: ["html"]
 }));
 
-app.get("/", function(req, res) {
-    res.sendFile("index.html", {root: config.ROOT});
+app.get("/", function (req, res) {
+  res.sendFile("index.html", { root: config.ROOT });
 });
 
-app.get("/suggestions", async function(req, res) {
-async function getsuggestions() {
-var term = req.query.q || "";
-var response = await fetch("https://duckduckgo.com/ac/?q=" + term + "&type=list");
-var result = await response.json();
-var suggestions = result[1]
-res.send(suggestions)
-}
-getsuggestions()
+app.get("/suggestions", async function (req, res) {
+  async function getsuggestions() {
+    var term = req.query.q || "";
+    var response = await fetch("https://duckduckgo.com/ac/?q=" + term + "&type=list");
+    var result = await response.json();
+    var suggestions = result[1];
+    res.send(suggestions);
+  };
+  getsuggestions();
 });
 
-app.get("/URIconfig", function(req, res) {
-res.send({
-  DC: process.env['INVITE_URL'] || "example.com",
-  WD: process.env['CHATBOX_URL'] || "example.com"
-  })
-})
+app.get("/URIconfig", (req, res) => {
+  res.send({
+    DC: process.env['INVITE_URL'] || "example.com",
+    WD: process.env['CHATBOX_URL'] || "example.com"
+  });
+});
 
-app.use(function(req, res) {
-    res.status(404).sendFile("404.html", {root: config.ROOT});
-})
+app.use(function (req, res) {
+  res.status(404).sendFile("404.html", { root: config.ROOT });
+});
 
 // Bad patch for dumb issue
 
 httpPatch.on('request', (req, res) => {
-  if (bare.shouldRoute(req)) {
-    bare.routeRequest(req, res)
+  if(bare.shouldRoute(req)) {
+    bare.routeRequest(req, res);
   } else if(req.url.startsWith(proxy.prefix)) {
-    proxy.request(req,res);
+    proxy.request(req, res);
   } else if(req.url.startsWith(Rhodium.prefix)) {
-    Rhodium.request(req, res)
-  } else { app(req, res) }
-})
+    Rhodium.request(req, res);
+  } else { app(req, res) };
+});
 
 httpPatch.on('upgrade', (req, socket, head) => {
   if (bare.shouldRoute(req, socket, head)) { bare.routeUpgrade(req, socket, head) } else { socket.end() }
-})
+});
 
 httpPatch.on('listening', () => {
   const addr = httpPatch.address();
@@ -126,8 +126,8 @@ httpPatch.on('listening', () => {
   console.log('You can now view it in your browser.')
   /* Code for listing IPS from website-aio */
   console.log(`Local: http://${addr.family === 'IPv6' ? `[${addr.address}]` : addr.address}:${addr.port}`);
-  try { console.log(`On Your Network: http://${address.ip()}:${addr.port}`); } catch (err) {/* Can't find LAN interface */};
-  if(process.env.REPL_SLUG && process.env.REPL_OWNER) console.log(`Replit: https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co`);
-})
+  try { console.log(`On Your Network: http://${address.ip()}:${addr.port}`); } catch (err) {/* Can't find LAN interface */ };
+  if (process.env.REPL_SLUG && process.env.REPL_OWNER) console.log(`Replit: https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co`);
+});
 
-httpPatch.listen({ port: port, })
+httpPatch.listen({ port: port, });
