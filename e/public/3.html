@@ -13,6 +13,7 @@
   <script src="/js/jquery-3.6.1.min.js" defer></script>
   <script src="/js/sussy/sussy.config.js"></script>
   <script src="/js/sussy/sussy.core.js"></script>
+  <script src="/js/sussy/store.js"></script>
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="black">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -52,11 +53,9 @@
 
       <div class="tabchoice" onclick="setgoogle()"><img src="/co/gateway?url=https://www.google.com/favicon.ico"></div>
 
-      <div class="tabchoice" onclick="setgoogled()"><img
-          src="/co/gateway?url=https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png"></div>
+      <div class="tabchoice" onclick="setgoogled()"><img src="/co/gateway?url=https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png"></div>
 
-      <div class="tabchoice" onclick="setedpuzzle()"><img
-          src="/co/gateway?url=https://edpuzzle.imgix.net/favicons/favicon-32.png"></div>
+      <div class="tabchoice" onclick="setedpuzzle()"><img src="/co/gateway?url=https://edpuzzle.imgix.net/favicons/favicon-32.png"></div>
 
       <div class="tabchoice" onclick="setzoom()"><img src="/co/gateway?url=https://st1.zoom.us/zoom.ico"></div>
 
@@ -64,14 +63,19 @@
 
     <div class="tabtitle">By URL</div>
 
-    <input id="cloaktitleurl" class="tabinput" placeholder="Enter a URL"
-      onkeydown="if(event.keyCode == 13){setTabByURL(this.value)}">
+    <input id="cloaktitleurl" class="tabinput" placeholder="Enter a URL" onkeydown="if(event.key == 'Enter') {setTabByURL(this.value)}">
 
     <div class="tabtitle">Advanced</div>
 
     <input onkeyup="settitle(this.value)" id="cloaktitletitle" class="tabinput" placeholder="Enter a title">
 
     <input onkeyup="setfavicon(this.value)" id="cloaktitleicon" class="tabinput" placeholder="Enter an icon URL">
+
+    <div class="tabtitle">about:blank cloak</div>
+
+    <div class="tabbuttons">
+      <div class="tabbutton" onClick="goBlank()">Go about:blank</div>
+    </div>
 
   </div>
 
@@ -163,26 +167,21 @@
     <div class="tabtitle">App</div>
 
     <div class="tabbuttons">
-
       <div class="tabbutton" onclick="installPWA()">Install</div>
-
     </div>
 
-    <div class="tabtitle">about:blank cloak</div>
+    <div class="tabtitle">Backups</div>
 
     <div class="tabbuttons">
-
-      <div class="tabbutton" onClick="goBlank()">Go about:blank</div>
-
+      <div class="tabbutton" onclick="loadFromFile()">Load from file</div>
+      <div class="tabbutton" onclick="saveToFile()">Manually save to file</div>
     </div>
 
     <div class="tabtitle">Reset</div>
 
     <div class="tabbuttons">
-
       <div class="tabbutton" onClick="resetSettings()">Settings</div>
       <div class="tabbutton" onClick="resetEverything()">Everything</div>
-
     </div>
 
   </div>

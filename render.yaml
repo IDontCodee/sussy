@@ -3,4 +3,4 @@ services:
     name: sussy
     env: node
     buildCommand: npm install
-    startCommand: npm start
+    startCommand: npm run wrapper

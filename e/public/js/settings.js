@@ -138,6 +138,16 @@ async function installPWA() {
   }
 }
 
+async function loadFromFile() {
+  alert('Coming Soon')
+}
+
+async function saveToFile() {
+  createFsStore();
+  save({ onlySave: true });
+  alert('Coming Soon')
+}
+
 function resetSettings() {
   if (confirm('Are you sure you want to reset all settings?')) {
     localStorage.removeItem('css')
