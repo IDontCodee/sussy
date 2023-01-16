@@ -1,0 +1,101 @@
+/* Default theme (and light, dark theme) are a custom sussy theme. Metallic theme is the base Metallic theme */
+
+@media (prefers-color-scheme: dark) {
+    body[appearance="default"] {
+      --text: white;
+      --text-contrast: white;
+      --highlight: #2493ff;
+      --background: #121212;
+      --placeholder: #666666;
+      --font-main: "Roboto";
+      --font-title: "Quicksand";
+    }
+}
+  
+@media (prefers-color-scheme: light) {
+    body[appearance="default"] {
+      --text: black;
+      --text-contrast: white;
+      --highlight: #2493ff;
+      --background: white;
+      --placeholder: #666666;
+      --font-main: "Roboto";
+      --font-title: "Quicksand";
+    }
+} 
+
+body[appearance="dark"] {
+    --text: white;
+    --text-contrast: white;
+    --highlight: #2493ff;
+    --background: #121212;
+    --placeholder: #666666;
+    --font-main: "Roboto";
+    --font-title: "Quicksand";
+}
+  
+body[appearance="light"] {
+    --text: black;
+    --text-contrast: white;
+    --highlight: #2493ff;
+    --background: white;
+    --placeholder: #666666;
+    --font-main: "Roboto";
+    --font-title: "Quicksand";
+}
+
+body[appearance="default"] .optionchoose, body[appearance="light"] .optionchoose, body[appearance="dark"] .optionchoose {
+    background: transparent;
+    color: var(--text);
+}
+  
+body[appearance="default"] .chooseactive, body[appearance="light"] .chooseactive, body[appearance="dark"] .chooseactive {
+    border: 1px solid var(--highlight);
+}
+  
+body[appearance="default"] .omnibox, body[appearance="light"] .omnibox, body[appearance="dark"] .omnibox {
+    background: transparent;
+    border: 1px solid var(--highlight);
+}
+  
+body[appearance="default"] .search, body[appearance="light"] .search, body[appearance="dark"] .search {
+    color: var(--text);
+}
+  
+body[appearance="default"] .navitem, body[appearance="light"] .navitem, body[appearance="dark"] .navitem {
+    background: transparent;
+    color: var(--highlight);
+    border: 1px solid var(--highlight);
+}
+  
+body[appearance="default"] .settingssidecard, body[appearance="light"] .settingssidecard, body[appearance="dark"] .settingssidecard {
+    background: transparent;
+    color: var(--text);
+}
+  
+body[appearance="default"] .settingssidecardsel, body[appearance="light"] .settingssidecardsel, body[appearance="dark"] .settingssidecardsel {
+    border: 1px solid var(--highlight);
+    border-left: none;
+}
+  
+body[appearance="default"] .optionchoosecircle, body[appearance="light"] .optionchoosecircle, body[appearance="dark"] .optionchoosecircle {
+    background: transparent;
+    border: 1px solid var(--highlight);
+    color: var(--highlight);
+}
+  
+body[appearance="default"] .optionchooseinput, body[appearance="light"] .optionchooseinput, body[appearance="dark"] .optionchooseinput {
+    background: transparent;
+    border: 1px solid var(--highlight);
+    color: var(--text);
+}
+  
+body[appearance="default"] .suggestions, body[appearance="light"] .suggestions, body[appearance="dark"] .suggestions {
+    background: transparent;
+    border: 1px solid var(--highlight);
+    border-top: 0;
+}
+  
+body[appearance="default"] .sugg, body[appearance="light"] .sugg, body[appearance="dark"] .sugg {
+    color: var(--text);
+}

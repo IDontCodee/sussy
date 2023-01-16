@@ -1,0 +1,20 @@
+@import url("./appearance.css");
+@import url("./rounding.css");
+@import url("./style.css");
+@import url("./mobile.css");
+@import url("./sussy.css");
+/* Custom sussy theme */
+
+
+/* logo text instead of icon, it needs to be here instead of appearance.css for some reason idk */
+.navname {
+  color: var(--light-text);
+  font-size: 35px;
+  padding: 8px;
+  display: flex;
+  font-family: var(--font-title);
+}
+
+.homenav {
+  justify-content: flex-start;
+}

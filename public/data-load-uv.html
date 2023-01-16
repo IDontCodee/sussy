@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="js/sw-scripts/uv.bundle.js"></script>
+    <script src="js/sw-scripts/uv.config.js"></script>
+    <title>sussy | Loading</title>
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: url('/fonts/Roboto-Regular.ttf') format('woff');
+        }
+        body {
+            background: #111;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0px;
+            align-items: center;
+        }
+        .msg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        p {
+            font-family: Roboto;
+        }
+        .info {
+            color: #FFF;
+            max-width: 600px;
+            text-align: center;
+            margin: 35px 0px 0px 0px;
+        }
+        .lds-dual-ring {
+            display: inline-block;
+            width: 160px;
+            height: 160px;
+        }
+        .lds-dual-ring:after {
+            content: " ";
+            display: block;
+            width: 128px;
+            height: 128px;
+            margin: 16px;
+            border-radius: 50%;
+            border: 12px solid #fff;
+            border-color: #fff transparent #fff transparent;
+            animation: lds-dual-ring 1.2s linear infinite;
+        }
+        @keyframes lds-dual-ring {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="msg">
+        <div class="lds-dual-ring"></div>
+        <p class="info" id="data-info">Getting Ready</p>
+    </div>
+    <script>
+        var info = document.getElementById("data-info");
+        if ('serviceWorker' in navigator) {
+            info.innerText = "[1/4]: Registering workers"
+            navigator.serviceWorker.register('/sw-handler.js', {
+                scope: '/'
+            }).then(() => {
+                info.innerText = "[2/4]: Loaded service workers"
+                let url = atob(decodeURIComponent(window.location.hash.slice(1)));
+                info.innerText = "[3/4]: Decoded URL"
+                    if (!isUrl(url)) url = 'https://duckduckgo.com/?q=' + url;
+                    else if (!(url.startsWith('https://') || url.startsWith('http://'))) { url = 'http://' + url; };
+                    document.querySelector('.lds-dual-ring').remove();
+                    info.innerText = "";
+                    document.body.style.background = 'white'; 
+                window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+            });
+        } else {
+            document.querySelector('.lds-dual-ring').remove();
+            info.innerText = `ERR: Service workers not supported or blocked (private browsing mode?).`
+        };
+
+        function isUrl(val = '') {
+            if (/^http(s?):\/\//.test(val) || val.includes('.') && val.substr(0, 1) !== ' ') return true;
+            return false;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/*
+Font Loader
+
+Path to fonts: fonts/
+*/
+
+/* Google Fonts*/
+
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@import url(https:/fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+
+/* quicksand-regular - latin */
+@font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+}
+
+/* ubuntu-mono-regular - latin */
+@font-face {
+    font-family: 'Ubuntu Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/UbuntuMono-Regular.ttf') format('truetype');
+}
+
+
+@import url(https:/fonts.googleapis.com/css2?family=Roboto+Slab&display=swap);
+@import url(https:/fonts.googleapis.com/css2?family=Prata&display=swap);
+
+/* jetbrains-mono-regular - latin */
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/JetBrainsMono-Regular.ttf') format('truetype');
+}
+
+@import url(https:/fonts.googleapis.com/css2?family=Rubik&display=swap);

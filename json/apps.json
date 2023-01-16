@@ -1,0 +1,63 @@
+[
+  {
+    "name": "YouTube",
+    "icon": "/apps/images/yt.png",
+    "url": "/data-load-uv.html#aHR0cHM6Ly93d3cueW91dHViZS5jb20="
+  },
+  {
+      "name": "Spotify",
+      "icon": "/apps/images/spot.png",
+      "url": "/data-load-uv.html#aHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29t"
+  },
+  {
+      "name": "Twitter",
+      "icon": "/apps/images/twt.png",
+      "url": "/data-load-uv.html#aHR0cHM6Ly90d2l0dGVyLmNvbS9leHBsb3Jl"
+  },
+  {
+      "name": "Reddit",
+      "icon": "/apps/images/rt.png",
+      "url": "/data-load-uv.html#aHR0cHM6Ly9yZWRkaXQuY29t"
+  },
+  {
+      "name": "Twitch",
+      "icon": "/apps/images/tich.jpg",
+      "url": "/data-load-uv.html#aHR0cHM6Ly90d2l0Y2gudHY="
+  },    
+  {
+      "name": "Xbox Cloud",
+      "icon": "/apps/images/xbox.png",
+      "url": "/data-load-uv.html#aHR0cHM6Ly93d3cueGJveC5jb20vZW4tdXMvcGxheQ=="
+  },
+  {
+      "name": "Discord",
+      "icon": "/apps/images/dd.jpg",
+      "url": "/data-load-uv.html#aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcHA="
+  },
+  {
+      "name": "CoolMathGames",
+      "icon": "/apps/images/cmg.png",
+      "url": "/data-load-uv.html#aHR0cHM6Ly93d3cuY29vbG1hdGhnYW1lcy5jb20="
+  },
+  {
+      "name": "More Games",
+      "icon": "/apps/images/moregames.png",
+      "url": "https://example.com",
+      "isMoreStuff": "true"
+  },
+  {
+      "name": "NoVNC",
+      "icon": "/apps/images/novnc.png",
+      "url": "/apps/novnc/vnc.html"
+  },
+  {
+      "name": "Geforce Now",
+      "icon": "/apps/images/gfnow.png",
+      "url": "/data-load-uv.html#aHR0cHM6Ly9wbGF5LmdlZm9yY2Vub3cuY29t"
+  },
+  {
+      "name": "Y8",
+      "icon": "/apps/images/y8.png",
+      "url": "/data-load-uv.html#aHR0cHM6Ly93d3cueTguY29t"
+  }
+]

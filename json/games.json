@@ -1,0 +1,273 @@
+[
+    {
+        "name": "Flash",
+        "icon": "/games/images/flash.jpg",
+        "url": "/games/files/flash"
+    },
+    {
+        "name": "GBA",
+        "icon": "/games/images/gba.png",
+        "url": "/games/files/webretro/?core=mgba"
+    },
+    {
+        "name": "Genesis",
+        "icon": "/games/images/genesis.png",
+        "url": "/games/files/webretro/?core=genesis_plus_gx"
+    },
+    {
+        "name": "NES",
+        "icon": "/games/images/nes.png",
+        "url": "/games/files/webretro/?core=nestopia"
+    },
+    {
+        "name": "N64",
+        "icon": "/games/images/n64.png",
+        "url": "/games/files/webretro/?core=mupen64plus_next"
+    },
+    {
+        "name": "SNES",
+        "icon": "/games/images/snes.png",
+        "url": "/games/files/webretro/?core=snes9x"
+    },
+    {
+        "name": "Asteroids",
+        "icon": "/games/images/asteroids.png",
+        "url": "/games/files/asteroids"
+    },
+    {
+        "name": "Astray",
+        "icon": "/games/images/astray.png",
+        "url": "/games/files/astray"
+    },
+    {
+        "name": "Slope",
+        "icon": "/games/images/slope.jpg",
+        "url": "/games/files/slope"
+    },
+    {
+        "name": "Algaes Escapade",
+        "icon": "/games/images/algaes-escapade.png",
+        "url": "/games/files/algaes-escapade"
+    },
+    {
+        "name": "Flappy Bird",
+        "icon": "/games/images/flappy-bird.png",
+        "url": "/games/files/flappy-bird"
+    },
+    {
+        "name": "Friday Night Funkin'",
+        "icon": "/games/images/fridaynightfunkin.jpg",
+        "url": "/games/files/fridaynightfunkin"
+    },
+    {
+        "name": "Garbage Collector",
+        "icon": "/games/images/garbage-collector.png",
+        "url": "/games/files/garbage-collector"
+    },
+    {
+        "name": "Geometry Dash",
+        "icon": "/games/images/geometrydash.jpg",
+        "url": "/games/files/geometry"
+    },
+  {
+        "name": "Friendly Fire",
+        "icon": "/games/images/friendlyfire.jpg",
+        "url": "/games/files/friendlyfire"
+    },
+    {
+        "name": "Doodle Jump",
+        "icon": "/games/images/doodle-jump.jpg",
+        "url": "/games/files/doodle-jump"
+    },
+    {
+        "name": "HexGL",
+        "icon": "/games/images/hexgl.jpg",
+        "url": "/games/files/hexgl"
+    },
+    {
+        "name": "The Chroma Incident",
+        "icon": "/games/images/chroma.jpg",
+        "url": "/games/files/chroma"
+    },
+   {
+        "name": "Chrome Dinosaur",
+        "icon": "/games/images/chrome-dinosaur.jpg",
+        "url": "/games/files/dinosaur"
+    },
+    {
+        "name": "Gopher Kart",
+        "icon": "/games/images/gopher-kart.png",
+        "url": "/games/files/gopher-kart"
+    },
+    {
+        "name": "Hextris",
+        "icon": "/games/images/hextris.png",
+        "url": "/games/files/hextris"
+    },
+    {
+        "name": "MineKhan",
+        "icon": "/games/images/minekhan.png",
+        "url": "/games/files/minekhan"
+    },
+  {
+        "name": "Cookie",
+        "icon": "/games/images/cookie-clicker.jpg",
+        "url": "/games/files/cookie"
+    },
+
+    {
+        "name": "Pacman",
+        "icon": "/games/images/pacman.jpg",
+        "url": "/games/files/pacman"
+    },
+    {
+        "name": "Space Invaders",
+        "icon": "/games/images/space-invaders.png",
+        "url": "/games/files/space-invaders"
+    },
+    {
+        "name": "Syobon Action",
+        "icon": "/games/images/syobon-action.jpg",
+        "url": "/games/files/syobon-action"
+    },
+    {
+        "name": "Twitch Tetris",
+        "icon": "/games/images/tetris.png",
+        "url": "/games/files/twitchtetris"
+    },
+    {
+        "name": "2048",
+        "icon": "/games/images/2048.png",
+        "url": "/games/files/2048"
+    },
+    {
+        "name": "Justfall.lol",
+        "icon": "/games/images/justfall-lol.jpg",
+        "url": "https://justfall.lol"
+    },
+        {
+        "name": "Stumble Guys",
+        "icon": "/games/images/download.jpeg",
+        "url": "https://now.gg/apps/kitka-games/7999/stumble-guys.html"
+    },
+            {
+        "name": "Minecraft",
+        "icon": "/games/images/images.jpeg",
+        "url": "https://now.gg/apps/mojang/2534/minecraft-trial.html"
+    },
+    {
+        "name": "Paper.io",
+        "icon": "/games/images/paper-io.jpg",
+        "url": "https://paper-io.com"
+    },
+    {
+        "name": "Skribbl.io",
+        "icon": "/games/images/skiribbl.png",
+        "url": "https://skribbl.io"
+    },
+    {
+        "name": "Shell Shockers",
+        "icon": "/games/images/shellshockers.jpg",
+        "url": "https://shellshock.io"
+    },
+    {
+        "name": "Krunker.io",
+        "icon": "/games/images/krk.png",
+        "url": "https://krunker.io"
+    },
+    {
+        "name": "Vex Backup Utility",
+        "icon": "about:blank",
+        "url": "/games/files/vexbackuputil"
+    },
+    {
+        "name": "Vex 3",
+        "icon": "/games/images/vex3.jpg",
+        "url": "/games/files/vex3"
+    },
+    {
+        "name": "Vex 4",
+        "icon": "/games/images/vex4.jpg",
+        "url": "/games/files/vex4"
+    },
+    {
+        "name": "Vex 5",
+        "icon": "/games/images/vex5.jpg",
+        "url": "/games/files/vex5"
+    },
+    {
+        "name": "Vex 6",
+        "icon": "/games/images/vex6.jpg",
+        "url": "/games/files/vex6"
+    },
+    {
+        "name": "Vex 7",
+        "icon": "/games/images/vex7.jpg",
+        "url": "https://html5.gamedistribution.com/0c454c9562d249d28ba3a2b50564042c/?gd_sdk_referrer_url="
+    },
+    {
+        "name": "Zombs Royale",
+        "icon": "/games/images/zombsroyale.jpg",
+        "url": "zombsroyale.io"
+    },
+    {
+        "name": "1v1.lol",
+        "icon": "/games/images/1v1-lol.jpg",
+        "url": "1v1.lol"
+    },
+  {
+        "name": "Retro Bowl",
+        "icon": "/games/images/retro-bowl.jpg",
+        "url": "/games/files/retro-bowl"
+    },
+    {
+        "name": "Fireboy And Watergirl",
+        "icon": "/games/images/fireboy-and-watergirl-forest-temple.jpg",
+        "url": "/games/files/fireboy-and-watergirl-forest-temple"
+    },
+  {
+        "name": "Imposter.io",
+        "icon": "/games/images/imposter.png",
+        "url": "https://imposter.io"
+    },
+    {
+        "name": "Achievement Unlocked",
+        "icon": "/games/images/achievementunlocked.jpg",
+        "url": "/games/files/flash?swf=achievementunlocked.swf"
+    },
+    {
+        "name": "Cubefield",
+        "icon": "/games/images/cubefield.jpeg",
+        "url": "/games/files/cubefield"
+    },
+      {
+        "name": "Among Us Scratch",
+        "icon": "/games/images/among.jpg",
+        "url": "/games/files/sus"
+    },
+    {
+        "name": "Roblox",
+        "icon": "/games/images/trash.png",
+        "url": "https://now.gg/play/roblox-corporation/5349/roblox"
+    },
+    {
+        "name": "Fortnite",
+        "icon": "/games/images/fn.png",
+        "url": "https://play.geforcenow.com/mall/#/deeplink?game-id=46bfab06-d864-465d-9e56-2d9e45cdee0a"
+    },
+    {
+        "name": "Splitgate",
+        "icon": "/games/images/sg.jpg",
+        "url": "https://play.geforcenow.com/mall/#/deeplink?game-id=39699fb7-5a05-41e6-86b2-3cd6fd6c459c"
+    },
+    {
+        "name": "Little Alchemy",
+        "icon": "/games/images/littlealchemy.png",
+        "url": "https://littlealchemy.com"
+    },
+    {
+        "name": "Little Alchemy 2",
+        "icon": "/games/images/alchemy2.jpg",
+        "url": "https://littlealchemy2.com"
+    }
+]
