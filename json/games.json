@@ -114,7 +114,11 @@
         "icon": "/games/images/cookie-clicker.jpg",
         "url": "/games/files/cookie"
     },
-
+    {
+        "name": "Radius Raid",
+        "icon": "/games/images/radiusraid.jpg",
+        "url": "/games/files/radius-raid"
+    },
     {
         "name": "Pacman",
         "icon": "/games/images/pacman.jpg",

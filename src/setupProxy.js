@@ -21,7 +21,7 @@ async function setupProxy(app) {
 
   app.use(json());
   
-  app.use(express.static("./static", {
+  app.use(static("./static", {
     extentions: ["html"]
   }))
   

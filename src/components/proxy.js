@@ -117,6 +117,7 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
         </div>
       </div>
       <iframe
+      tabIndex={1}
         onLoad={async () => {
           var updatedConfig = {
             url: config.url,
