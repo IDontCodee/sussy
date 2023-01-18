@@ -102,9 +102,13 @@ readFile("./typeDefs.graphql", "utf8", async (err, typeDefs) => {
   console.log("ERR");
   console.error(err);
   }
-})
+});
 
 app.use(express.static('./build', {
+  extensions: ["html"]
+}));
+
+app.use(express.static('./static', {
   extensions: ["html"]
 }));
 

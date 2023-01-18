@@ -3,6 +3,7 @@ const { readFileSync } = require('node:fs');
 const { ApolloServer } = require('@apollo/server');
 const { expressMiddleware } = require('@apollo/server/express4');
 const { json } = require('express');
+const { static } = require('express');
 
 /**
  *
@@ -19,6 +20,10 @@ async function setupProxy(app) {
   });
 
   app.use(json());
+  
+  app.use(express.static("./static", {
+    extentions: ["html"]
+  }))
   
   app.use('/graphql', (req, res, next) => {
     return middleware(req, res, next);
