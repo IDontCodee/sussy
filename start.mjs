@@ -108,9 +108,7 @@ app.use(express.static('./build', {
   extensions: ["html"]
 }));
 
-app.use(express.static('./static', {
-  extensions: ["html"]
-}));
+app.use(express.static('./static'));
 
 app.use(function (req, res, next) {
   if(req.url =='/graphql') return next();
