@@ -1,0 +1,3 @@
+entrypoint = "e/README.md"
+language = "nodejs"
+run = ["npm", "start"]
