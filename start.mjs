@@ -25,7 +25,7 @@ import express from 'express';
 import { WebSocketServer } from 'ws';
 const httpPatch = http.createServer();
 const app = express();
-const ws = WebSocketServer({ noServer: true });
+const ws = new WebSocketServer({ noServer: true });
 import basicAuth from 'express-basic-auth';
 
 // GQL
