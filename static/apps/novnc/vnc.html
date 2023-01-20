@@ -184,6 +184,10 @@
                     </li>
                     <li><hr></li>
                     <li>
+                        <label for="noVNC_setting_sessionID">Session ID:</label>
+                        <input id="noVNC_setting_sessionID" type="text" value="">
+                    </li>
+                    <li>
                         <div class="noVNC_expander">Advanced</div>
                         <div><ul>
                             <li>
@@ -196,15 +200,13 @@
                             </li>
                             <li><hr></li>
                             <li>
-                                <label for="noVNC_setting_repeaterID">Repeater ID:</label>
+                                <label for="noVNC_setting_repeaterID">Repeater ID (for vnc repeaters):</label>
                                 <input id="noVNC_setting_repeaterID" type="text" value="">
                             </li>
+                            <!--
                             <li>
                                 <div class="noVNC_expander">WebSocket</div>
                                 <div><ul>
-                                    <li>
-                                        <label><input id="noVNC_setting_encrypt" type="checkbox"> Encrypt</label>
-                                    </li>
                                     <li>
                                         <label for="noVNC_setting_host">Host:</label>
                                         <input id="noVNC_setting_host">
@@ -219,6 +221,7 @@
                                     </li>
                                 </ul></div>
                             </li>
+                            -->
                             <li><hr></li>
                             <li>
                                 <label><input id="noVNC_setting_reconnect" type="checkbox"> Automatic Reconnect</label>
@@ -273,18 +276,6 @@
             <div id="noVNC_connect_button"><div>
                 <img alt="" src="app/images/connect.svg"> Connect
             </div></div>
-
-            <!-- Presets button -->
-            <div id="noVNC_preset_button"><div id="preset-list">
-                Loading Connections...
-                <!--
-                <br>
-                <img alt="" src="app/images/connect.svg"> Presets
-                <br>
-                <img alt="" src="app/images/connect.svg"> Presets
-                -->
-            </div></div>
-
         </div>
     </div>
 

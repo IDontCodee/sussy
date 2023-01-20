@@ -8,6 +8,7 @@ import { getWindowLocation } from "../util.js";
 import "../style/controls.css";
 import BareClient from "@tomphttp/bare-client";
 import { useSearchParams } from "react-router-dom";
+import { CollectionsOutlined } from "@mui/icons-material";
 
 /**
  * Return a blob URL to a working icon. Returns undefined if none work.
@@ -16,12 +17,15 @@ import { useSearchParams } from "react-router-dom";
  * @returns {string|undefined}
  */
 async function workingIcon(bare, list) {
-  for (var url of list)
+  for (var urlstring of list)
     try {
+      const url = new URL(urlstring);
       var res;
-      if(url.startsWith('/') && !url.startsWith('//')) res = await fetch(url); else res = await bare.fetch(url); // local file no proxy
+      if(url.origin == window.location.origin) res = await fetch(urlstring); else res = await bare.fetch(urlstring); // local file, don't use proxy
       if (!res.ok) continue;
-      return URL.createObjectURL(await res.blob());
+      const blob = await res.blob();
+      if(blob.type.split(";")[0] == "text/html;") return; // WE DON'T WANT HTML FILES
+      return URL.createObjectURL(blob);
     } catch (err) {
       console.warn('There was a error while updating the (working) icon:');
       console.error(err);

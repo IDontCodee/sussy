@@ -1,6 +1,8 @@
 import { fileURLToPath } from 'node:url';
 import { join, dirname } from 'node:path';
 import { createRequire } from "module";
+import { readFile, existsSync } from 'node:fs';
+if(!existsSync('./build')) throw "Please build with 'npm run build'";
 const require = createRequire(import.meta.url);
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -19,12 +21,14 @@ users[username] = password;
 // Web Server
 import http from 'http';
 import express from 'express';
+// https://npmjs.com/package/ws
+import { WebSocketServer } from 'ws';
 const httpPatch = http.createServer();
 const app = express();
+const ws = WebSocketServer({ noServer: true });
 import basicAuth from 'express-basic-auth';
 
 // GQL
-import { readFile } from 'node:fs';
 import { ApolloServer } from '@apollo/server';
 import { expressMiddleware } from '@apollo/server/express4';
 import { ApolloServerPluginLandingPageProductionDefault } from '@apollo/server/plugin/landingPage/default';
@@ -118,17 +122,16 @@ app.use(function (req, res, next) {
 // Bad patch for dumb issue
 
 httpPatch.on('request', (req, res) => {
-  if(bare.shouldRoute(req)) {
-    bare.routeRequest(req, res);
-  } else if(req.url.startsWith(proxy.prefix)) {
-    proxy.request(req, res);
-  } else if(req.url.startsWith(Rhodium.prefix)) {
-    Rhodium.request(req, res);
-  } else { app(req, res) };
+  if(bare.shouldRoute(req)) return bare.routeRequest(req, res);
+  if(req.url.startsWith(proxy.prefix)) return proxy.request(req, res);
+  if(req.url.startsWith(Rhodium.prefix)) return Rhodium.request(req, res);
+  app(req, res);
 });
 
 httpPatch.on('upgrade', (req, socket, head) => {
-  if (bare.shouldRoute(req, socket, head)) { bare.routeUpgrade(req, socket, head) } else { socket.end() }
+  if(bare.shouldRoute(req, socket, head)) return bare.routeUpgrade(req, socket, head);
+  if(ws.shouldHandle()) return ws.handleUpgrade(req, socket, head, (s) => ws.emit('connection', s, req) );
+  socket.end();
 });
 
 httpPatch.on('listening', () => {

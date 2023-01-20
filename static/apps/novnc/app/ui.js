@@ -17,6 +17,8 @@ import Keyboard from "../core/input/keyboard.js";
 import RFB from "../core/rfb.js";
 import * as WebUtil from "./webutil.js";
 
+import DataChannelAPI from '../DataChannelAPI.js';
+
 const PAGE_TITLE = "noVNC";
 
 const UI = {
@@ -150,21 +152,7 @@ const UI = {
         UI.initSetting('logging', 'warn');
         UI.updateLogging();
 
-        // if port == 80 (or 443) then it won't be present and should be
-        // set manually
-        let port = window.location.port;
-        if (!port) {
-            if (window.location.protocol.substring(0, 5) == 'https') {
-                port = 443;
-            } else if (window.location.protocol.substring(0, 4) == 'http') {
-                port = 80;
-            }
-        }
-
         /* Populate the controls if defaults are provided in the URL */
-        UI.initSetting('host', window.location.hostname);
-        UI.initSetting('port', port);
-        UI.initSetting('encrypt', (window.location.protocol === "https:"));
         UI.initSetting('view_clip', false);
         UI.initSetting('resize', 'off');
         UI.initSetting('quality', 6);
@@ -172,8 +160,8 @@ const UI = {
         UI.initSetting('shared', true);
         UI.initSetting('view_only', false);
         UI.initSetting('show_dot', false);
-        UI.initSetting('path', 'websockify');
         UI.initSetting('repeaterID', '');
+        UI.initSetting('sessionID', '');
         UI.initSetting('reconnect', false);
         UI.initSetting('reconnect_delay', 5000);
 
@@ -343,7 +331,6 @@ const UI = {
         document.getElementById("noVNC_settings_button")
             .addEventListener('click', UI.toggleSettingsPanel);
 
-        UI.addSettingChangeHandler('encrypt');
         UI.addSettingChangeHandler('resize');
         UI.addSettingChangeHandler('resize', UI.applyResizeMode);
         UI.addSettingChangeHandler('resize', UI.updateViewClip);
@@ -358,10 +345,8 @@ const UI = {
         UI.addSettingChangeHandler('view_only', UI.updateViewOnly);
         UI.addSettingChangeHandler('show_dot');
         UI.addSettingChangeHandler('show_dot', UI.updateShowDotCursor);
-        UI.addSettingChangeHandler('host');
-        UI.addSettingChangeHandler('port');
-        UI.addSettingChangeHandler('path');
         UI.addSettingChangeHandler('repeaterID');
+        UI.addSettingChangeHandler('sessionID');
         UI.addSettingChangeHandler('logging');
         UI.addSettingChangeHandler('logging', UI.updateLogging);
         UI.addSettingChangeHandler('reconnect');
@@ -422,22 +407,16 @@ const UI = {
         if (UI.connected) {
             UI.updateViewClip();
 
-            UI.disableSetting('encrypt');
             UI.disableSetting('shared');
-            UI.disableSetting('host');
-            UI.disableSetting('port');
-            UI.disableSetting('path');
             UI.disableSetting('repeaterID');
+            UI.disableSetting('sessionID');
 
             // Hide the controlbar after 2 seconds
             UI.closeControlbarTimeout = setTimeout(UI.closeControlbar, 2000);
         } else {
-            UI.enableSetting('encrypt');
             UI.enableSetting('shared');
-            UI.enableSetting('host');
-            UI.enableSetting('port');
-            UI.enableSetting('path');
             UI.enableSetting('repeaterID');
+            UI.enableSetting('sessionID');
             UI.updatePowerButton();
             UI.keepControlbar();
         }
@@ -834,15 +813,14 @@ const UI = {
         UI.openControlbar();
 
         // Refresh UI elements from saved cookies
-        UI.updateSetting('encrypt');
         UI.updateSetting('view_clip');
         UI.updateSetting('resize');
         UI.updateSetting('quality');
         UI.updateSetting('compression');
         UI.updateSetting('shared');
         UI.updateSetting('view_only');
-        UI.updateSetting('path');
         UI.updateSetting('repeaterID');
+        UI.updateSetting('sessionID');
         UI.updateSetting('logging');
         UI.updateSetting('reconnect');
         UI.updateSetting('reconnect_delay');
@@ -982,17 +960,15 @@ const UI = {
             .classList.remove("noVNC_open");
     },
 
-    connect(event, password) {
+    async connect(event, password) {
 
         // Ignore when rfb already exists
         if (typeof UI.rfb !== 'undefined') {
             return;
         }
 
-        const host = UI.getSetting('host');
-        const port = UI.getSetting('port');
-        const path = UI.getSetting('path');
-
+        const sessionID = UI.getSetting("sessionID");
+      
         if (typeof password === 'undefined') {
             password = WebUtil.getConfigVar('password');
             UI.reconnectPassword = password;
@@ -1004,27 +980,23 @@ const UI = {
 
         UI.hideStatus();
 
-        if (!host) {
-            Log.Error("Can't connect when host is: " + host);
-            UI.showStatus(_("Must set host"), 'error');
+        if (!sessionID) {
+            Log.Error("Can't connect when session ID is: " + sessionID);
+            UI.showStatus(_("Must set session ID"), 'error');
             return;
         }
+
+        const DataChannel = new DataChannelAPI(sessionID, UI.showStatus);
+
+        await DataChannel.init();
 
         UI.closeConnectPanel();
 
         UI.updateVisualState('connecting');
 
-        let url;
+        // IHERE
 
-        url = UI.getSetting('encrypt') ? 'wss' : 'ws';
-
-        url += '://' + host;
-        if (port) {
-            url += ':' + port;
-        }
-        url += '/' + path;
-
-        UI.rfb = new RFB(document.getElementById('noVNC_container'), url,
+        UI.rfb = new RFB(document.getElementById('noVNC_container'), DataChannel.connection,
                          { shared: UI.getSetting('shared'),
                            repeaterID: UI.getSetting('repeaterID'),
                            credentials: { password: password } });
@@ -1086,12 +1058,7 @@ const UI = {
         UI.connected = true;
         UI.inhibitReconnect = false;
 
-        let msg;
-        if (UI.getSetting('encrypt')) {
-            msg = _("Connected (encrypted) to ") + UI.desktopName;
-        } else {
-            msg = _("Connected (unencrypted) to ") + UI.desktopName;
-        }
+        let msg = _("Connected (encrypted) to ") + UI.desktopName;
         UI.showStatus(msg);
         UI.updateVisualState('connected');
 

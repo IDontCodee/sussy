@@ -168,7 +168,7 @@ function Home() {
         <div>
         <Link className="footersides link" to="/support">FAQ</Link>
         <Link className="footersides link" to="/credits">Credits</Link>
-        <a>Sus Network 2022 - {new Date().getFullYear()}</a>
+        <a className="footersides">Sus Network 2022 - {new Date().getFullYear()}</a>
         </div>
       </div>
     </>

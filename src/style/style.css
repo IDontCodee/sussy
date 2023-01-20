@@ -124,6 +124,7 @@ body {
 }
 
 .search {
+  width: 91%;
   height: 44px;
   outline: none;
   background: transparent;
