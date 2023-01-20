@@ -34,7 +34,6 @@ for (const file of files) {
 
   try {
     await copyFile(indexURL, output);
-    console.log(output.href);
   } catch (err) {
     if (err?.code !== "EEXIST") throw err;
   }

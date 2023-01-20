@@ -2,9 +2,9 @@ import { fileURLToPath } from 'node:url';
 import { join, dirname } from 'node:path';
 import { createRequire } from "module";
 import { readFile, existsSync } from 'node:fs';
-if(!existsSync('./build')) throw "Please build with 'npm run build'";
+if(!existsSync("./node_modules")) throw "Please install packages with 'yarn'"
+if(!existsSync('./build')) throw "Please build with 'yarn build'";
 const require = createRequire(import.meta.url);
-const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // Config
 import { config as envconfig } from 'dotenv';
