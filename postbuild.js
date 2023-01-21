@@ -3,7 +3,7 @@
  */
 import { copyFile, mkdir } from "node:fs/promises";
 
-const buildURL = new URL("./build/", import.meta.url);
+const buildURL = new URL("./dist/", import.meta.url);
 const indexURL = new URL("index.html", buildURL);
 
 /**

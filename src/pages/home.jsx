@@ -1,9 +1,9 @@
-/*global __sussy$ */
+/*global __sussy$config */
 import React from "react";
 import { Link } from "react-router-dom";
-import Nav from "../components/nav.js";
-import Head from "../components/head.js";
-import Proxy from "../components/proxy.js";
+import Nav from "../components/nav.jsx";
+import Head from "../components/head.jsx";
+import Proxy from "../components/proxy.jsx";
 import BareClient from "@tomphttp/bare-client";
 import { bareServerURL } from "../consts.js";
 import { getLink } from "../util.js";
@@ -22,6 +22,10 @@ function Home() {
   function loadDC() {
     window.open(data.URIconfig.DC, '_blank');
   };
+
+  function loadGC() {
+    window.open(__sussy$config.GCURI, '_blank');
+  }
   
   var proxy = React.useRef();
 
@@ -158,7 +162,7 @@ function Home() {
       </div>
       <div className="iconFooter">
         <div className="icons">
-            <a className="icon" onClick={__sussy$.loadGC}><i className="fab fa-google"></i></a>
+            <a className="icon" onClick={loadGC}><i className="fab fa-google"></i></a>
             <a className="icon" onClick={loadDC}><i className="fab fa-discord"></i></a>
         </div>
       </div>

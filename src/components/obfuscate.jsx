@@ -2,7 +2,7 @@ import clsx from "clsx";
 import { create } from "random-seed";
 import { memo } from "react";
 
-const rand = create(navigator.userAgent + global.location.origin);
+const rand = create(navigator.userAgent + window.location.origin);
 
 const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -54,7 +54,7 @@ export function ObfuscateLayout() {
 
 class ObfuscateContext {
   constructor(seed) {
-    this.rand = create(seed + navigator.userAgent + global.location.origin);
+    this.rand = create(seed + navigator.userAgent + window.location.origin);
   }
   ellipsisClass() {
     return ellipsisClasses[this.rand(ellipsisClasses.length)];

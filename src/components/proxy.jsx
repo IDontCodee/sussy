@@ -10,6 +10,10 @@ import BareClient from "@tomphttp/bare-client";
 import { useSearchParams } from "react-router-dom";
 import { CollectionsOutlined } from "@mui/icons-material";
 
+const NotAImage = [
+  "text/html"
+]
+
 /**
  * Return a blob URL to a working icon. Returns undefined if none work.
  * @param {BareClient} bare
@@ -24,7 +28,7 @@ async function workingIcon(bare, list) {
       if(url.origin == window.location.origin) res = await fetch(urlstring); else res = await bare.fetch(urlstring); // local file, don't use proxy
       if (!res.ok) continue;
       const blob = await res.blob();
-      if(blob.type.split(";")[0] == "text/html;") return; // WE DON'T WANT HTML FILES
+      if(NotAImage.includes(blob.type.split(";")[0])) return; // WE DON'T WANT HTML FILES
       return URL.createObjectURL(blob);
     } catch (err) {
       console.warn('There was a error while updating the (working) icon:');
@@ -40,7 +44,6 @@ function BareIcon({ src, ...attributes }) {
     return () => {
       if (src.startsWith("blob:")) {
         URL.revokeObjectURL(src);
-        console.log("revoked", src);
       }
     };
   }, [src]);

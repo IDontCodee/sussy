@@ -2,22 +2,22 @@ import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import "../style/index.css";
 import "../proxy.js";
-import Background from "../components/background.js";
-import SettingsLayout from "../SettingsLayout.js";
-import { ObfuscateLayout } from "../components/obfuscate";
+import Background from "../components/background.jsx";
+import SettingsLayout from "../SettingsLayout.jsx";
+import { ObfuscateLayout } from "../components/obfuscate.jsx";
 
-var Home = React.lazy(() => import("./home.js"));
-var SettingsAppearance = React.lazy(() => import("./settings/appearance.js"));
-var SettingsSearch = React.lazy(() => import("./settings/search.js"));
-var SettingsTab = React.lazy(() => import("./settings/tab.js"));
-var SettingsUI = React.lazy(() => import("./settings/ui.js"));
-var SettingsPageApp = React.lazy(() => import("./settings/app.js"));
-var Apps = React.lazy(() => import("./apps.js"));
-var Games = React.lazy(() => import("./games.js"));
-var Support = React.lazy(() => import("./support.js"));
-var Credits = React.lazy(() => import("./credits.js"));
-var Chatbox = React.lazy(() => import("./chatbox.js"));
-var Error = React.lazy(() => import("./error.js"));
+var Home = React.lazy(() => import("./home.jsx"));
+var SettingsAppearance = React.lazy(() => import("./settings/appearance.jsx"));
+var SettingsSearch = React.lazy(() => import("./settings/search.jsx"));
+var SettingsTab = React.lazy(() => import("./settings/tab.jsx"));
+var SettingsUI = React.lazy(() => import("./settings/ui.jsx"));
+var SettingsPageApp = React.lazy(() => import("./settings/app.jsx"));
+var Apps = React.lazy(() => import("./apps.jsx"));
+var Games = React.lazy(() => import("./games.jsx"));
+var Support = React.lazy(() => import("./support.jsx"));
+var Credits = React.lazy(() => import("./credits.jsx"));
+var Chatbox = React.lazy(() => import("./chatbox.jsx"));
+var Error = React.lazy(() => import("./error.jsx"));
 
 
 function App() {

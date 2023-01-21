@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import React from "react";
-import Obfuscate from "../../components/obfuscate.js";
+import Obfuscate from "../../components/obfuscate.jsx";
 import { useLocalEngine, useLocalProxy, useLocalControls } from "../../settings.js";
 
 function EngineOption({ type, children }) {
@@ -27,21 +27,6 @@ function ProxyOption({ type, children }) {
         setLocalProxy(type);
       }}
       className={clsx("optionchoose", type === localProxy && "chooseactive")}
-    >
-      {children}
-    </div>
-  );
-}
-
-function ControlsOption({ type, children }) {
-  const [localControls, setLocalControls] = useLocalControls();
-
-  return (
-    <div
-      onClick={() => {
-        setLocalControls(type);
-      }}
-      className={clsx("optionchoose", type === localControls && "chooseactive")}
     >
       {children}
     </div>
@@ -81,20 +66,6 @@ function Search() {
         <EngineOption type="Google">
           <Obfuscate>Google :(</Obfuscate>
         </EngineOption>
-      </div>
-      <div className="optiontitle">
-        <Obfuscate>Controls</Obfuscate>
-      </div>
-      <div className="chooseoption">
-        <ControlsOption type="default">
-          <Obfuscate>Default</Obfuscate>
-        </ControlsOption>
-        <ControlsOption type="modern">
-          <Obfuscate>Modern</Obfuscate>
-        </ControlsOption>
-        <ControlsOption type="classic">
-          <Obfuscate>Classic</Obfuscate>
-        </ControlsOption>
       </div>
     </>
   );

@@ -13,6 +13,7 @@ export var useLocalRounding = () => useLocalFallback("rounding", "default");
 export var useLocalProxy = () => useLocalFallback("type", "Ultraviolet");
 export var useLocalTitle = () => useLocalStorage("title");
 export var useLocalIcon = () => useLocalStorage("icon");
+export var useLocalNavbar = () => useLocalFallback("navbar", "icons");
 
 
 export function resetSettings() {

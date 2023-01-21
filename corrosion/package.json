@@ -1,0 +1,19 @@
+{
+    "dependencies": {
+      "acorn-hammerhead": "^0.5.0",
+      "css-tree": "^2.3.1",
+      "esotope-hammerhead": "^0.6.3",
+      "parse5": "^7.1.2",
+      "webpack": "^5.46.0"
+    },
+    "name": "corrosion",
+    "type": "commonjs",
+    "version": "1.0.0",
+    "main": "server/index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": ""
+  }

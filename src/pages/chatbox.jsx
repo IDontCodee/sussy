@@ -1,7 +1,7 @@
 /* global __sussy$ */
 import React from "react";
-import Nav from "../components/nav.js";
-import Head from "../components/head.js";
+import Nav from "../components/nav.jsx";
+import Head from "../components/head.jsx";
 import { getLink } from "../util.js";
 
 import { useQuery, gql } from '@apollo/client';

@@ -1,8 +1,8 @@
 import React from "react";
-import Nav from "../components/nav.js";
-import Head from "../components/head.js";
-import Obfuscate from "../components/obfuscate.js";
-import Proxy from "../components/proxy.js";
+import Nav from "../components/nav.jsx";
+import Head from "../components/head.jsx";
+import Obfuscate from "../components/obfuscate.jsx";
+import Proxy from "../components/proxy.jsx";
 import globeSVG from "../assets/globe.svg";
 import { getLink } from "../util.js";
 

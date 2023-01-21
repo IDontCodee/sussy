@@ -1,9 +1,7 @@
-import { fileURLToPath } from 'node:url';
-import { join, dirname } from 'node:path';
 import { createRequire } from "module";
 import { readFile, existsSync } from 'node:fs';
 if(!existsSync("./node_modules")) throw "Please install packages with 'yarn'"
-if(!existsSync('./build')) throw "Please build with 'yarn build'";
+if(!existsSync('./dist')) throw "Please build with 'yarn build'";
 const require = createRequire(import.meta.url);
 
 // Config
@@ -34,7 +32,7 @@ import { expressMiddleware } from '@apollo/server/express4';
 import { ApolloServerPluginLandingPageProductionDefault } from '@apollo/server/plugin/landingPage/default';
 
 // PX imports
-const Corrosion = require("./corrosion/server")
+const Corrosion = require("./corrosion")
 import RhodiumProxy from 'Rhodium';
 import createServer from '@tomphttp/bare-server-node';
 
@@ -108,7 +106,7 @@ readFile("./typeDefs.graphql", "utf8", async (err, typeDefs) => {
   }
 });
 
-app.use(express.static('./build', {
+app.use(express.static('./dist', {
   extensions: ["html"]
 }));
 
@@ -116,7 +114,7 @@ app.use(express.static('./static'));
 
 app.use(function (req, res, next) {
   if(req.url =='/graphql') return next();
-  res.status(404).sendFile("404.html", { root: './build' });
+  res.status(404).sendFile("404.html", { root: './dist' });
 });
 
 // Bad patch for dumb issue

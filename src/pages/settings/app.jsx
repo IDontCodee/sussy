@@ -1,5 +1,5 @@
 import React from "react";
-import Obfuscate from "../../components/obfuscate.js";
+import Obfuscate from "../../components/obfuscate.jsx";
 import { manualSave, restore } from '../../fileStore.js';
 
 

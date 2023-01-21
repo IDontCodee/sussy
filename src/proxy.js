@@ -6,7 +6,7 @@ export const swSupported = navigator.serviceWorker !== undefined;
 if (swSupported) {
   navigator.serviceWorker.register(window.location.origin + "/sw.js");
 
-  navigator.serviceWorker.register(new URL("/sw-handler.js", global.location), {
+  navigator.serviceWorker.register(new URL("/sw-handler.js", window.location), {
     scope: __uv$config.prefix,
   });
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import Obfuscate from "../../components/obfuscate.js";
+import Obfuscate from "../../components/obfuscate.jsx";
 import ClearIcon from "@mui/icons-material/Clear";
 import BareClient from "@tomphttp/bare-client";
 import { useLocalIcon, useLocalTitle } from "../../settings.js";

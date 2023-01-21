@@ -36,15 +36,15 @@ export function getLink(url, morestuff) {
 
   switch (type) {
     case "Stomp":
-      return new URL(stomp.html(url), global.location).toString();
+      return new URL(stomp.html(url), window.location).toString();
     case "Corrosion":
       return new URL(
         __uv$config.encodeUrl(url),
-        new URL(__sussy$config._co, global.location)
+        new URL(__sussy$config._co, window.location)
       ).toString();
     default:
     case "Rhodium":
-      return new URL(__uv$config.encodeUrl(url), new URL(__sussy$config._rho, global.location))
+      return new URL(__uv$config.encodeUrl(url), new URL(__sussy$config._rho, window.location))
     case "Ultraviolet":
       return "/data-load-uv.html#" + btoa(url);
   }

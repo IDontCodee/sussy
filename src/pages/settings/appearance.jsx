@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import React from "react";
-import Obfuscate from "../../components/obfuscate.js";
+import Obfuscate from "../../components/obfuscate.jsx";
 import { useLocalAppearance, useLocalBackground } from "../../settings.js";
 
 function ThemeOption({ type, children }) {

@@ -1,6 +1,6 @@
 { pkgs }: {
 	deps = [
-         pkgs.nodejs
-         pkgs.yarn
+        pkgs.nodejs
+        pkgs.yarn
 	];
 }
