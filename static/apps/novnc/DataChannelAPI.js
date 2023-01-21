@@ -10,4 +10,12 @@ export default class DataChannelAPI {
     }
     config = {
     }
+    async init(id, password) {
+        var serverData = await fetch(`/__sussy/sessions/${id}/data`, {
+            headers: {
+                "X-Auth-Pass": password
+            }
+        });
+        var data = await serverData.json();
+    }
 }
