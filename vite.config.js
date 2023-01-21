@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import svgr from 'vite-plugin-svgr'
 
 import createBareServer from '@tomphttp/bare-server-node';
 import { readFileSync } from 'node:fs';
@@ -50,6 +51,17 @@ const setupProxy = {
 export default defineConfig({
   plugins: [
     react(),
+    svgr({
+      svgrOptions: {
+        prettier: false,
+        svgo: false,
+        svgoConfig: {
+          plugins: [{ removeViewBox: false }],
+        },
+        titleProp: true,
+        ref: true,
+      }
+    }),
     setupProxy
-  ],
+  ]
 })

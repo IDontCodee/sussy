@@ -1,6 +1,6 @@
 import { createRequire } from "module";
 import { readFile, existsSync } from 'node:fs';
-if(!existsSync("./node_modules")) throw "Please install packages with 'yarn'"
+if(!existsSync("./node_modules")) throw "Please install packages with 'yarn'";
 if(!existsSync('./dist')) throw "Please build with 'yarn build'";
 const require = createRequire(import.meta.url);
 
@@ -32,7 +32,7 @@ import { expressMiddleware } from '@apollo/server/express4';
 import { ApolloServerPluginLandingPageProductionDefault } from '@apollo/server/plugin/landingPage/default';
 
 // PX imports
-const Corrosion = require("./corrosion")
+const Corrosion = require("corrosion")
 import RhodiumProxy from 'Rhodium';
 import createServer from '@tomphttp/bare-server-node';
 

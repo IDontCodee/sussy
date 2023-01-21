@@ -6,16 +6,17 @@ import App from "./pages/app.jsx";
 import { ApolloClient, InMemoryCache, ApolloProvider, ApolloLink, HttpLink } from '@apollo/client';
 import apolloLogger from 'apollo-link-logger';
 
-const DEVELOPMENT = process.env.NODE_ENV === 'development'
+const links = [
+  new HttpLink({
+    uri: '/graphql'
+  })
+];
+
+if(process.env.NODE_ENV === 'development') links.unshift(apolloLogger);
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
-  link: ApolloLink.from([
-    (DEVELOPMENT) && apolloLogger,
-    new HttpLink({
-      uri: '/graphql'
-    })
-  ])
+  link: ApolloLink.from(links)
 });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

@@ -10,9 +10,9 @@ import ChatIcon from '@mui/icons-material/Chat';
 import HomeIcon from '@mui/icons-material/Home';
 
 // Logos
-import MetallicLogo from "../assets/metallicLogo.svg";
-import TsunamiSVG from "../assets/tsunamiLogo.svg";
-import BananaSVG from "../assets/bananaLogo.svg";
+import { ReactComponent as MetallicLogo } from "../assets/metallicLogo.svg";
+import { ReactComponent as TsunamiSVG } from "../assets/tsunamiLogo.svg";
+import { ReactComponent as BananaSVG } from "../assets/bananaLogo.svg";
 
 function Nav() {
   const icons = new Map([
