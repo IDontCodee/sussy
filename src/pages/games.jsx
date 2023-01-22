@@ -9,7 +9,7 @@ import { getLink, fetchJSON } from "../util.js";
 function Games() {
   var proxy = React.useRef();
   const [gitems, setgitems] = React.useState([]);
-  React.useEffect(() => { fetchJSON("/games.json", setgitems) }, []);
+  React.useEffect(() => { fetchJSON("/games/games.json", setgitems) }, []);
 
   function goGame(config) {
     try {

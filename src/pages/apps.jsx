@@ -9,7 +9,7 @@ import { getLink, fetchJSON } from "../util.js";
 function Apps() {
   var proxy = React.useRef();
   const [appItems, setAppItems] = React.useState([]);
-  React.useEffect(() => { fetchJSON("/apps.json", setAppItems) }, []);
+  React.useEffect(() => { fetchJSON("/apps/apps.json", setAppItems) }, []);
 
   function goApp(config) {
     try {
