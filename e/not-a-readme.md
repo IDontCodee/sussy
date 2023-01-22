@@ -2,7 +2,9 @@
 
 <div align="center">
 <img src="https://socialify.git.ci/IDontCodee/sussy/image?description=1&language=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2FIDontCodee%2Fsussy%2Fmain%2Fstatic%2Fimg%2Flogo.svg&name=1&owner=1&pattern=Solid&theme=Auto" alt="sussy" width="640" height="320" />
+</div>
 
+<div align="center">
 <a href="https://render.com/deploy?repo=https://github.com/IDontCodee/sussy">
 <img src="https://img.shields.io/badge/render-4f65f1.svg?style=for-the-badge&logo=render&logoColor=46e3b7"><img>
 </a>
@@ -18,7 +20,6 @@
 <a href="https://app.koyeb.com/deploy?type=git&repository=github.com/IDontCodee/sussy&branch=main&name=sussy">
 <img src="https://img.shields.io/badge/koyeb-121212.svg?style=for-the-badge&logo=koyeb&logoColor=87fcc4"><img>
 </a>
-
 </div>
 
 ## Features
