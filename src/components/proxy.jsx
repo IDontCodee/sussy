@@ -8,7 +8,6 @@ import { getWindowLocation } from "../util.js";
 import "../style/controls.css";
 import BareClient from "@tomphttp/bare-client";
 import { useSearchParams } from "react-router-dom";
-import { CollectionsOutlined } from "@mui/icons-material";
 
 const NotAImage = [
   "text/html"

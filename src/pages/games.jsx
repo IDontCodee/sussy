@@ -4,23 +4,12 @@ import Head from "../components/head.jsx";
 import Obfuscate from "../components/obfuscate.jsx";
 import Proxy from "../components/proxy.jsx";
 import globeSVG from "../assets/globe.svg";
-import { getLink } from "../util.js";
-
-import { useQuery, gql } from '@apollo/client';
+import { getLink, fetchJSON } from "../util.js";
 
 function Games() {
-  let GetGSData = gql`
-  query GetGSData {
-      GSData {
-        icon
-        name
-        url
-      }
-    }  
-  `;
-  let { loading, error, data } = useQuery(GetGSData);
   var proxy = React.useRef();
-  let gitems = data ? data.GSData : [];
+  const [gitems, setgitems] = React.useState([]);
+  React.useEffect(() => { fetchJSON("/games.json", setgitems) }, []);
 
   function goGame(config) {
     try {

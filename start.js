@@ -1,5 +1,5 @@
 import { createRequire } from "module";
-import { readFile, existsSync } from 'node:fs';
+import { existsSync } from 'node:fs';
 if(!existsSync("./node_modules")) throw "Please install packages with 'yarn'";
 if(!existsSync('./dist')) throw "Please build with 'yarn build'";
 const require = createRequire(import.meta.url);
@@ -25,11 +25,6 @@ const httpPatch = http.createServer();
 const app = express();
 const ws = new WebSocketServer({ noServer: true });
 import basicAuth from 'express-basic-auth';
-
-// GQL
-import { ApolloServer } from '@apollo/server';
-import { expressMiddleware } from '@apollo/server/express4';
-import { ApolloServerPluginLandingPageProductionDefault } from '@apollo/server/plugin/landingPage/default';
 
 // PX imports
 const Corrosion = require("corrosion")
@@ -74,46 +69,20 @@ function autherror(req) {
     : "Error"
 };
 
-let GSJson = require("./json/games.json");
-let AppJson = require("./json/apps.json");
-
-readFile("./typeDefs.graphql", "utf8", async (err, typeDefs) => {
-  if(err) return console.err(err);
-  try {
-    const server = new ApolloServer({
-      typeDefs,
-      plugins: [
-        ApolloServerPluginLandingPageProductionDefault()
-      ],
-      resolvers: {
-        Query: {
-          GSData: () => GSJson,
-          AppData: () => AppJson,
-          URIconfig: () => {
-            return {
-              DC: process.env['INVITE_URL'] || "https://example.com",
-              WD: process.env['CHATBOX_URL'] || "example.com"
-            }
-          }
-        }
-      }
-    });
-    await server.start();
-    app.use('/graphql', express.json(), expressMiddleware(server));
-  } catch(err) {
-  console.log("ERR");
-  console.error(err);
-  }
-});
-
 app.use(express.static('./dist', {
   extensions: ["html"]
 }));
 
 app.use(express.static('./static'));
 
-app.use(function (req, res, next) {
-  if(req.url =='/graphql') return next();
+app.get("/URIconfig", (req, res) => {
+  res.send({
+    DC: process.env['INVITE_URL'] || "example.com",
+    CH: process.env['CHATBOX_URL'] || "example.com"
+  });
+});
+
+app.use(function (req, res) {
   res.status(404).sendFile("404.html", { root: './dist' });
 });
 

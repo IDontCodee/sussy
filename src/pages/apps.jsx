@@ -4,23 +4,12 @@ import Head from "../components/head.jsx";
 import Obfuscate from "../components/obfuscate.jsx";
 import Proxy from "../components/proxy.jsx";
 import globeSVG from "../assets/globe.svg";
-import { getLink } from "../util.js";
-
-import { useQuery, gql } from '@apollo/client';
+import { getLink, fetchJSON } from "../util.js";
 
 function Apps() {
-  let GetAppData = gql`
-  query GetAppData {
-      AppData {
-          icon
-          name
-          url
-      }
-  }
-  `;
-  let { loading, error, data } = useQuery(GetAppData);
   var proxy = React.useRef();
-  let gitems = data ? data.AppData : [];
+  const [appItems, setAppItems] = React.useState([]);
+  React.useEffect(() => { fetchJSON("/apps.json", setAppItems) }, []);
 
   function goApp(config) {
     try {
@@ -41,7 +30,7 @@ function Apps() {
     setAppsSearchTerm(e.target.value.toLowerCase());
   }
 
-  const gitemssearched = gitems.filter((item) => {
+  const appItemsSearched = appItems.filter((item) => {
     if (!appsSearchTerm) {
       return item;
     } else {
@@ -74,13 +63,13 @@ function Apps() {
           />
         </div>
       </div>
-      {!gitemssearched.length ? (
+      {!appItemsSearched.length ? (
         <div className="desc">No results found.</div>
       ) : (
         ""
       )}
       <div className="gitems">
-        {gitemssearched.map((item, i) => {
+        {appItemsSearched.map((item, i) => {
           return (
             <div
               onClick={() => goApp(item, item.isMoreStuff)}

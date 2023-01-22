@@ -1,6 +1,13 @@
 /*global __uv$config, __sussy$config */
 import { stomp, swSupported } from "./proxy.js";
 
+
+export async function fetchJSON(path, setState) {
+  const data = await fetch(path);
+  const json = await data.json();
+  setState(json);
+}
+
 export function getSearchEngine() {
   var engine = localStorage.getItem("engine");
 

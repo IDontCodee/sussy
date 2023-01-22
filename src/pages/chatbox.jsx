@@ -2,9 +2,7 @@
 import React from "react";
 import Nav from "../components/nav.jsx";
 import Head from "../components/head.jsx";
-import { getLink } from "../util.js";
-
-import { useQuery, gql } from '@apollo/client';
+import { getLink, fetchJSON } from "../util.js";
 
 import RefreshIcon from "@mui/icons-material/Refresh";
 import "../style/controls.css";
@@ -52,20 +50,14 @@ var Proxy = React.forwardRef((props, ref) => {
 });
 
 function Chatbox() {
-  let { data } = useQuery(gql`
-  query URIconfig {
-    URIconfig {
-      WD
-    }
-  }
-  `);
+  const [data, setData] = React.useState();
+  React.useEffect(() => { fetchJSON("/URIconfig", setData) }, []);
   var proxy = React.useRef();
   try {
-    if(data) proxy.current.open({ url: getLink(data.URIconfig.WD) });
+    if(data) proxy.current.open({ url: getLink(data.CH) });
   } catch(err) {
     console.warn('Could not load chatbox');
-    console.warn(err);
-    alert('There was a error loading the chatbox. Try again in a couple seconds.');
+    console.error(err);
   };
   return (
     <>

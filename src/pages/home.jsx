@@ -6,21 +6,14 @@ import Head from "../components/head.jsx";
 import Proxy from "../components/proxy.jsx";
 import BareClient from "@tomphttp/bare-client";
 import { bareServerURL } from "../consts.js";
-import { getLink } from "../util.js";
-
-import { useQuery, gql } from '@apollo/client';
+import { getLink, fetchJSON } from "../util.js";
 
 function Home() {
-  let { data } = useQuery(gql`
-  query URIconfig {
-    URIconfig {
-      DC
-    }
-  }
-  `);
+  const [data, setData] = React.useState();
+  React.useEffect(() => { fetchJSON("/URIconfig", setData) }, []);
 
   function loadDC() {
-    window.open(data.URIconfig.DC, '_blank');
+    window.open(data.DC, '_blank');
   };
 
   function loadGC() {

@@ -17,7 +17,7 @@
   "shortcuts": [
     {
       "name": "Apps",
-      "url": "/1",
+      "url": "/apps",
       "icons": [
         {
           "src": "/img/apps.png",
@@ -27,7 +27,7 @@
     },
     {
       "name": "Arcade",
-      "url": "/2",
+      "url": "/arcade",
       "icons": [
         {
           "src": "/img/a.jpg",
@@ -37,7 +37,7 @@
     },
     {
       "name": "Chat",
-      "url": "/6",
+      "url": "/chat",
       "icons": [
         {
           "src": "/img/c.png",
@@ -47,7 +47,7 @@
     },
     {
       "name": "Settings",
-      "url": "/3",
+      "url": "/settings/tab",
       "icons": [
         {
           "src": "/img/settings.jpg",
