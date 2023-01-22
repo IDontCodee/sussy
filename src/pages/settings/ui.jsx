@@ -1,4 +1,3 @@
-import clsx from "clsx";
 import React from "react";
 import Obfuscate from "../../components/obfuscate.jsx";
 import { ControlsOption, RoundingOption, NavbarOption } from "../../components/SettingsButtons.jsx";

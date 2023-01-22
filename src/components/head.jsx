@@ -5,6 +5,7 @@ import {
   useLocalRounding,
   useLocalIcon,
   useLocalTitle,
+  useLocalNavbar
 } from "../settings.js";
 
 function Head({ defaultTitle, defaultIcon }) {
@@ -13,6 +14,7 @@ function Head({ defaultTitle, defaultIcon }) {
   var [localAppearance] = useLocalAppearance();
   var [localControls] = useLocalControls();
   var [localRounding] = useLocalRounding();
+  var [localNavbar] = useLocalNavbar();
 
   var title = localTitle || defaultTitle || "";
   var icon = localIcon || defaultIcon || "/img/logo.svg";
@@ -20,6 +22,7 @@ function Head({ defaultTitle, defaultIcon }) {
   document.body.setAttribute("appearance", localAppearance);
   document.body.setAttribute("controls", localControls);
   document.body.setAttribute("rounding", localRounding);
+  document.body.setAttribute("navbar", localNavbar);
 
   document.title = title;
 

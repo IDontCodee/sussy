@@ -22,7 +22,7 @@ function Nav() {
     ["Chatbox", ChatIcon],
     ["Settings", SettingsIcon]
   ])
-  var [localAppearance] = useLocalAppearance();
+  const [localAppearance] = useLocalAppearance();
   const [localNavbar] = useLocalNavbar();
   function NavbarItem({ name, to }) {
     const string = () => ( <a>{name}</a>);

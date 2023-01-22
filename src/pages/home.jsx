@@ -171,9 +171,9 @@ function Home() {
         </div>
       </div>
       <div className="iconFooter">
-        <div className="icons">
-            <a className="navitem" onClick={loadGC}><i className="fab fa-google"></i></a>
-            <a className="navitem" onClick={loadDC}><i className="fab fa-discord"></i></a>
+        <div className="footer-icons">
+            <a className="footericon" onClick={loadGC}><i className="fab fa-google"></i></a>
+            <a className="footericon" onClick={loadDC}><i className="fab fa-discord"></i></a>
         </div>
       </div>
       <div className="footer">

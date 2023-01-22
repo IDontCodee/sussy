@@ -62,11 +62,21 @@ body[appearance="default"] .search, body[appearance="light"] .search, body[appea
     color: var(--text);
 }
   
-body[appearance="default"] .navitem, body[appearance="light"] .navitem, body[appearance="dark"] .navitem {
+body[appearance="default"] .footericon, body[appearance="light"] .footericon, body[appearance="dark"] .footericon {
     background: transparent;
     color: var(--highlight);
     border: 1px solid var(--highlight);
 }
+
+body[appearance="default"] .navitem, body[appearance="light"] .navitem, body[appearance="dark"] .navitem {
+    background: transparent;
+    color: var(--highlight);
+}
+
+body[appearance="default"] body[navbar="text"] .navitem, body[appearance="light"] body[navbar="text"].navitem, body[appearance="dark"] body[navbar="text"] .navitem {
+    border: 1px solid var(--highlight);
+}
+
   
 body[appearance="default"] .settingssidecard, body[appearance="light"] .settingssidecard, body[appearance="dark"] .settingssidecard {
     background: transparent;

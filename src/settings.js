@@ -17,9 +17,10 @@ export var useLocalNavbar = () => useLocalFallback("navbar", "icons");
 
 
 export function resetSettings() {
-
-}
+  alert('__sussy$resetSettings')
+  window.location.reload()
+};
 
 export function resetAll() {
-  
-}
+  alert('Not finished... For now, go to your browser settings and clear website data.');
+};

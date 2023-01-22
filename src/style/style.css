@@ -4,11 +4,24 @@
 
 /* front page icons */
 
-.icons {
+.footer-icons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.footericon {
+  height: 40px !important;
+  width: 40px !important;
+  cursor: pointer;
+  color: var(--text-contrast);
+  text-decoration: none;
+  border-radius: var(--border-radius-round);
+  background: var(--highlight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .iconFooter {
@@ -124,7 +137,20 @@ body {
   left: 44px;
 }
 
-.navitems {
+
+/* navbar */
+body[navbar="text"] .navitems {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+body[navbar="icons"] .navitems {
   position: fixed;
   top: 10px;
   right: 10px;
@@ -134,7 +160,15 @@ body {
   gap: 10px;
 }
 
-.navitem {
+body[navbar="text"] .navitem {
+  color: var(--text);
+  font-size: 16px;
+  margin: 25px;
+  border: none;
+  text-decoration: none;
+}
+
+body[navbar="icons"] .navitem {
   height: 40px !important;
   width: 40px !important;
   cursor: pointer;
