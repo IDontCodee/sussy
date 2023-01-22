@@ -8,6 +8,9 @@ import BareClient from "@tomphttp/bare-client";
 import { bareServerURL } from "../consts.js";
 import { getLink, fetchJSON } from "../util.js";
 
+import { ProxyOption } from "../components/SettingsButtons.jsx";
+import Obfuscate from "../components/obfuscate.jsx";
+
 function Home() {
   const [data, setData] = React.useState();
   React.useEffect(() => { fetchJSON("/URIconfig", setData) }, []);
@@ -151,6 +154,20 @@ function Home() {
               dangerouslySetInnerHTML={{ __html: item }}
             ></div>
           ))}
+        </div>
+        <div className="chooseoption" style={{ margin: 'auto' }}>
+        <ProxyOption type="Ultraviolet">
+          <Obfuscate>Ultraviolet</Obfuscate>
+        </ProxyOption>
+        <ProxyOption type="Stomp">
+          <Obfuscate>Stomp</Obfuscate>
+        </ProxyOption>
+        <ProxyOption type="Corrosion">
+          <Obfuscate>Corrosion</Obfuscate>
+        </ProxyOption>
+        <ProxyOption type="Rhodium">
+          <Obfuscate>Rhodium</Obfuscate>
+        </ProxyOption>
         </div>
       </div>
       <div className="iconFooter">

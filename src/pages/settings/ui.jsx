@@ -1,53 +1,7 @@
 import clsx from "clsx";
 import React from "react";
 import Obfuscate from "../../components/obfuscate.jsx";
-import { useLocalControls, useLocalNavbar, useLocalRounding } from "../../settings.js";
-
-
-function ControlsOption({ type, children }) {
-  const [localControls, setLocalControls] = useLocalControls();
-
-  return (
-    <div
-      onClick={() => {
-        setLocalControls(type);
-      }}
-      className={clsx("optionchoose", type === localControls && "chooseactive")}
-    >
-      {children}
-    </div>
-  );
-}
-
-function RoundingOption({ type, children }) {
-  const [localRounding, setLocalRounding] = useLocalRounding();
-
-  return (
-    <div
-      onClick={() => {
-        setLocalRounding(type);
-      }}
-      className={clsx("optionchoose", type === localRounding && "chooseactive")}
-    >
-      {children}
-    </div>
-  );
-}
-
-function NavbarOption({ type, children }) {
-  const [localNavbar, setLocalNavbar] = useLocalNavbar();
-
-  return (
-    <div
-      onClick={() => {
-        setLocalNavbar(type);
-      }}
-      className={clsx("optionchoose", type === localNavbar && "chooseactive")}
-    >
-      {children}
-    </div>
-  );
-}
+import { ControlsOption, RoundingOption, NavbarOption } from "../../components/SettingsButtons.jsx";
 
 function UI() {
   return (

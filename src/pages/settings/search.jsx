@@ -1,37 +1,6 @@
-import clsx from "clsx";
 import React from "react";
 import Obfuscate from "../../components/obfuscate.jsx";
-import { useLocalEngine, useLocalProxy, useLocalControls } from "../../settings.js";
-
-function EngineOption({ type, children }) {
-  var [localEngine, setLocalEngine] = useLocalEngine();
-
-  return (
-    <div
-      onClick={() => {
-        setLocalEngine(type);
-      }}
-      className={clsx("optionchoose", type === localEngine && "chooseactive")}
-    >
-      {children}
-    </div>
-  );
-}
-
-function ProxyOption({ type, children }) {
-  var [localProxy, setLocalProxy] = useLocalProxy();
-
-  return (
-    <div
-      onClick={() => {
-        setLocalProxy(type);
-      }}
-      className={clsx("optionchoose", type === localProxy && "chooseactive")}
-    >
-      {children}
-    </div>
-  );
-}
+import { EngineOption, ProxyOption } from "../../components/SettingsButtons.jsx";
 
 function Search() {
   return (
@@ -58,14 +27,14 @@ function Search() {
       </div>
       <div className="chooseoption">
       <EngineOption type="DuckDuckGo">
-          <Obfuscate>DuckDuckGo</Obfuscate>
-        </EngineOption>
-        <EngineOption type="Brave">
-          <Obfuscate>Brave</Obfuscate>
-        </EngineOption>
-        <EngineOption type="Google">
-          <Obfuscate>Google :(</Obfuscate>
-        </EngineOption>
+        <Obfuscate>DuckDuckGo</Obfuscate>
+      </EngineOption>
+      <EngineOption type="Brave">
+        <Obfuscate>Brave</Obfuscate>
+      </EngineOption>
+      <EngineOption type="Google">
+        <Obfuscate>Google :(</Obfuscate>
+      </EngineOption>
       </div>
     </>
   );

@@ -1,43 +1,7 @@
-import clsx from "clsx";
 import React from "react";
 import Obfuscate from "../../components/obfuscate.jsx";
-import { useLocalAppearance, useLocalBackground } from "../../settings.js";
+import { ThemeOption, BackgroundOption } from "../../components/SettingsButtons.jsx";
 
-function ThemeOption({ type, children }) {
-  const [localAppearance, setLocalAppearance] = useLocalAppearance();
-
-  return (
-    <div
-      onClick={() => {
-        setLocalAppearance(type);
-      }}
-      className={clsx(
-        "optionchoose",
-        type === localAppearance && "chooseactive"
-      )}
-    >
-      {children}
-    </div>
-  );
-}
-
-function BackgroundOption({ type, children }) {
-  const [localBackground, setLocalBackground] = useLocalBackground();
-
-  return (
-    <div
-      onClick={() => {
-        setLocalBackground(type);
-      }}
-      className={clsx(
-        "optionchoose",
-        type === localBackground && "chooseactive"
-      )}
-    >
-      {children}
-    </div>
-  );
-}
 
 function Appearance() {
   return (

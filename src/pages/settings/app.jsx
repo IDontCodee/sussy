@@ -2,10 +2,6 @@ import React from "react";
 import Obfuscate from "../../components/obfuscate.jsx";
 import { manualSave, restore } from '../../fileStore.js';
 
-
-function doJunk(type) {
-  window.alert(type)
-}
 function BackupButton({ type, children }) {
   return (
     <div
@@ -23,17 +19,6 @@ function BackupButton({ type, children }) {
 function App() {
   return (
     <>
-      <div className="optiontitle">
-        <Obfuscate>App</Obfuscate>
-      </div>
-      <div className="chooseoption">
-        <div
-          onClick={() => {
-            alert('__sussy$pwaAppPrompt')
-          }}
-          className="optionchoose chooseactive">Install
-        </div>
-      </div>
       <div className="optiontitle">
         <Obfuscate>Backups</Obfuscate>
       </div>
