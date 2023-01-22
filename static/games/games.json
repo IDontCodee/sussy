@@ -40,14 +40,69 @@
         "url": "/games/files/astray"
     },
     {
+        "name": "Breaklock",
+        "icon": "/games/images/breaklock.png",
+        "url": "/games/files/breaklock"
+    },
+    {
+        "name": "Bounce Back",
+        "icon": "/games/images/bounceback.png",
+        "url": "/games/files/bounceback"
+    },
+    {
+        "name": "Space Company",
+        "icon": "/games/images/SpaceCompany.png",
+        "url": "/games/files/spacecompany"
+    },
+    {
+        "name": "Back country",
+        "icon": "/games/images/",
+        "url": "/games/files/backcountry"
+    },
+    {
+        "name": "Black hole square",
+        "icon": "/games/images/",
+        "url": "/games/files/blackholesquare"
+    },
+    {
+        "name": "Breakout",
+        "icon": "/games/images/",
+        "url": "/games/files/breakout"
+    },
+    {
+        "name": "Connect 3",
+        "icon": "/games/images/",
+        "url": "/games/files/connect3"
+    },
+    {
+        "name": "Edge not found",
+        "icon": "/games/images/",
+        "url": "/games/files/edgenotfound"
+    },
+    {
+        "name": "Packa bunchas",
+        "icon": "/games/images/",
+        "url": "/games/files/packabunchas"
+    },
+    {
+        "name": "Retro haunt",
+        "icon": "/games/images/",
+        "url": "/games/files/retrohaunt"
+    },
+    {
+        "name": "Road blocks",
+        "icon": "/games/images/",
+        "url": "/games/files/roadblocks"
+    },
+    {
+        "name": "run 3",
+        "icon": "/games/images/",
+        "url": "/games/files/run3"
+    },
+    {
         "name": "Slope",
         "icon": "/games/images/slope.jpg",
         "url": "/games/files/slope"
-    },
-    {
-        "name": "Algaes Escapade",
-        "icon": "/games/images/algaes-escapade.png",
-        "url": "/games/files/algaes-escapade"
     },
     {
         "name": "Flappy Bird",
@@ -104,11 +159,6 @@
         "icon": "/games/images/hextris.png",
         "url": "/games/files/hextris"
     },
-    {
-        "name": "MineKhan",
-        "icon": "/games/images/minekhan.png",
-        "url": "/games/files/minekhan"
-    },
   {
         "name": "Cookie Clicker",
         "icon": "/games/images/cookie-clicker.jpg",
@@ -130,11 +180,6 @@
         "url": "/games/files/space-invaders"
     },
     {
-        "name": "Syobon Action",
-        "icon": "/games/images/syobon-action.jpg",
-        "url": "/games/files/syobon-action"
-    },
-    {
         "name": "Twitch Tetris",
         "icon": "/games/images/tetris.png",
         "url": "/games/files/twitchtetris"
@@ -149,25 +194,10 @@
         "icon": "/games/images/justfall-lol.jpg",
         "url": "https://justfall.lol"
     },
-        {
-        "name": "Stumble Guys",
-        "icon": "/games/images/download.jpeg",
-        "url": "https://now.gg/apps/kitka-games/7999/stumble-guys.html"
-    },
-            {
-        "name": "Minecraft",
-        "icon": "/games/images/images.jpeg",
-        "url": "https://now.gg/apps/mojang/2534/minecraft-trial.html"
-    },
     {
         "name": "Paper.io",
         "icon": "/games/images/paper-io.jpg",
         "url": "https://paper-io.com"
-    },
-    {
-        "name": "Skribbl.io",
-        "icon": "/games/images/skiribbl.png",
-        "url": "https://skribbl.io"
     },
     {
         "name": "Shell Shockers",
@@ -205,11 +235,6 @@
         "url": "/games/files/vex6"
     },
     {
-        "name": "Vex 7",
-        "icon": "/games/images/vex7.jpg",
-        "url": "https://html5.gamedistribution.com/0c454c9562d249d28ba3a2b50564042c/?gd_sdk_referrer_url="
-    },
-    {
         "name": "Zombs Royale",
         "icon": "/games/images/zombsroyale.jpg",
         "url": "zombsroyale.io"
@@ -235,11 +260,6 @@
         "url": "https://imposter.io"
     },
     {
-        "name": "Achievement Unlocked",
-        "icon": "/games/images/achievementunlocked.jpg",
-        "url": "/games/files/flash?swf=achievementunlocked.swf"
-    },
-    {
         "name": "Cubefield",
         "icon": "/games/images/cubefield.jpeg",
         "url": "/games/files/cubefield"
@@ -248,21 +268,6 @@
         "name": "Among Us Scratch",
         "icon": "/games/images/among.jpg",
         "url": "/games/files/sus"
-    },
-    {
-        "name": "Roblox",
-        "icon": "/games/images/trash.png",
-        "url": "https://now.gg/play/roblox-corporation/5349/roblox"
-    },
-    {
-        "name": "Fortnite",
-        "icon": "/games/images/fn.png",
-        "url": "https://play.geforcenow.com/mall/#/deeplink?game-id=46bfab06-d864-465d-9e56-2d9e45cdee0a"
-    },
-    {
-        "name": "Splitgate",
-        "icon": "/games/images/sg.jpg",
-        "url": "https://play.geforcenow.com/mall/#/deeplink?game-id=39699fb7-5a05-41e6-86b2-3cd6fd6c459c"
     },
     {
         "name": "Little Alchemy",
