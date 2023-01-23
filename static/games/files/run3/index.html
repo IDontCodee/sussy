@@ -13,7 +13,9 @@
 	<link rel="shortcut icon" type="image/png" href="./favicon.png">
 	
 	<script type="text/javascript">
-		Object.defineProperty(Document.prototype, "domain", {get: function() { return "player03.com"; }});
+		Object.defineProperty(Document.prototype, "domain", {get: function() { 
+			return "localhost";
+		}});
 		window.gLocalStorage = {
 			setItem: function(key, value) {
 				console.log("%cset...", "color: #8888ff", key, value);
@@ -30,9 +32,9 @@
 			}
 		};
 		window.gLocation = {
-			hostname: "player03.com",
-			pathname: "/run3/",
-			href: window.location.protocol + "//player03.com/run3/",
+			hostname: window.location.hostname,
+			pathname: window.location.pathname,
+			href: window.location.href,
 			protocol: window.location.protocol
 		};
 	</script>
