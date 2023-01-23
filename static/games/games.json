@@ -2,32 +2,12 @@
     {
         "name": "Flash",
         "icon": "/games/images/flash.jpg",
-        "url": "/games/files/flash"
+        "url": "/games/ruffle"
     },
     {
-        "name": "GBA",
-        "icon": "/games/images/gba.png",
-        "url": "/games/files/webretro/?core=mgba"
-    },
-    {
-        "name": "Genesis",
-        "icon": "/games/images/genesis.png",
-        "url": "/games/files/webretro/?core=genesis_plus_gx"
-    },
-    {
-        "name": "NES",
-        "icon": "/games/images/nes.png",
-        "url": "/games/files/webretro/?core=nestopia"
-    },
-    {
-        "name": "N64",
-        "icon": "/games/images/n64.png",
-        "url": "/games/files/webretro/?core=mupen64plus_next"
-    },
-    {
-        "name": "SNES",
-        "icon": "/games/images/snes.png",
-        "url": "/games/files/webretro/?core=snes9x"
+        "name": "webretro",
+        "icon": "/games/webretro/assets/icons/iconm256.png",
+        "url": "/games/webretro"
     },
     {
         "name": "Asteroids",
@@ -45,37 +25,37 @@
         "url": "/games/files/breaklock"
     },
     {
-        "name": "Bounce Back",
-        "icon": "/games/images/bounceback.png",
+        "name": "Bounceback",
+        "icon": "/games/images/bounceback.webp",
         "url": "/games/files/bounceback"
     },
     {
         "name": "Space Company",
-        "icon": "/games/images/SpaceCompany.png",
+        "icon": "/games/images/SpaceCompany.webp",
         "url": "/games/files/spacecompany"
     },
     {
-        "name": "Back country",
+        "name": "Backcountry",
         "icon": "/games/images/",
         "url": "/games/files/backcountry"
     },
     {
-        "name": "Black hole square",
-        "icon": "/games/images/",
+        "name": "Black Hole Square",
+        "icon": "/games/files/blackholesquare/icon.png",
         "url": "/games/files/blackholesquare"
     },
     {
         "name": "Breakout",
-        "icon": "/games/images/",
+        "icon": "/games/images/breakout.webp",
         "url": "/games/files/breakout"
     },
     {
         "name": "Connect 3",
-        "icon": "/games/images/",
+        "icon": "/games/images/connect3.webp",
         "url": "/games/files/connect3"
     },
     {
-        "name": "Edge not found",
+        "name": "Edge Not Found",
         "icon": "/games/images/",
         "url": "/games/files/edgenotfound"
     },
@@ -85,18 +65,18 @@
         "url": "/games/files/packabunchas"
     },
     {
-        "name": "Retro haunt",
-        "icon": "/games/images/",
+        "name": "Retrohaunt",
+        "icon": "/games/images/retrohaunt.webp",
         "url": "/games/files/retrohaunt"
     },
     {
-        "name": "Road blocks",
-        "icon": "/games/images/",
+        "name": "Roadblocks",
+        "icon": "/games/images/roadblocks.webp",
         "url": "/games/files/roadblocks"
     },
     {
-        "name": "run 3",
-        "icon": "/games/images/",
+        "name": "Run 3",
+        "icon": "/games/images/run3.webp",
         "url": "/games/files/run3"
     },
     {
@@ -106,7 +86,7 @@
     },
     {
         "name": "Flappy Bird",
-        "icon": "/games/images/flappy-bird.png",
+        "icon": "/games/images/flappy-bird.webp",
         "url": "/games/files/flappy-bird"
     },
     {
@@ -156,12 +136,12 @@
     },
     {
         "name": "Hextris",
-        "icon": "/games/images/hextris.png",
+        "icon": "/games/images/hextris.webp",
         "url": "/games/files/hextris"
     },
   {
         "name": "Cookie Clicker",
-        "icon": "/games/images/cookie-clicker.jpg",
+        "icon": "/games/images/cookie.webp",
         "url": "/games/files/cookie"
     },
     {
@@ -213,6 +193,11 @@
         "name": "Vex Backup Utility",
         "icon": "about:blank",
         "url": "/games/files/vexbackuputil"
+    },
+    {
+        "name": "Vex 1",
+        "icon": "/games/images/vex1.webp",
+        "url": "/games/ruffle/?swf=/games/swf_files/vex.swf"
     },
     {
         "name": "Vex 3",

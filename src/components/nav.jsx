@@ -25,7 +25,7 @@ function Nav() {
   const [localAppearance] = useLocalAppearance();
   const [localNavbar] = useLocalNavbar();
   function NavbarItem({ name, to }) {
-    const string = () => ( <a>{name}</a>);
+    const string = () => ( <>{name}</>);
     const Navcomponent = localNavbar == "icons" ? icons.get(name) : string;
     return (
       <Link className="navitem" to={to}>
