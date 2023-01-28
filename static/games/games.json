@@ -12,162 +12,182 @@
     {
         "name": "Asteroids",
         "icon": "/games/images/asteroids.png",
-        "url": "/games/files/asteroids"
+        "url": "gs://asteroids"
     },
     {
         "name": "Astray",
         "icon": "/games/images/astray.png",
-        "url": "/games/files/astray"
+        "url": "gs://astray"
+    },
+    {
+        "name": "1 on 1 Soccer",
+        "icon": "/games/images/1-on-1-soccer.webp",
+        "url": "ruffle://1on1soccer.swf"
+    },
+    {
+        "name": "Bash the Computer",
+        "icon": "/games/images/bashthecomputer.webp",
+        "url": "ruffle://bashthecomputer.swf"
     },
     {
         "name": "Breaklock",
         "icon": "/games/images/breaklock.png",
-        "url": "/games/files/breaklock"
+        "url": "gs://breaklock"
     },
     {
         "name": "Bounceback",
         "icon": "/games/images/bounceback.webp",
-        "url": "/games/files/bounceback"
+        "url": "gs://bounceback"
     },
     {
         "name": "Space Company",
         "icon": "/games/images/SpaceCompany.webp",
-        "url": "/games/files/spacecompany"
+        "url": "gs://spacecompany"
+    },
+    {
+        "name": "Snake",
+        "icon": "/games/images/snake.webp",
+        "url": "gs://snake"
     },
     {
         "name": "Backcountry",
         "icon": "/games/images/",
-        "url": "/games/files/backcountry"
+        "url": "gs://backcountry"
     },
     {
         "name": "Black Hole Square",
-        "icon": "/games/files/blackholesquare/icon.png",
-        "url": "/games/files/blackholesquare"
+        "icon": "gs://blackholesquare/icon.png",
+        "url": "gs://blackholesquare"
     },
     {
         "name": "Breakout",
         "icon": "/games/images/breakout.webp",
-        "url": "/games/files/breakout"
+        "url": "gs://breakout"
     },
     {
         "name": "Connect 3",
         "icon": "/games/images/connect3.webp",
-        "url": "/games/files/connect3"
+        "url": "gs://connect3"
     },
     {
         "name": "Edge Not Found",
         "icon": "/games/images/",
-        "url": "/games/files/edgenotfound"
+        "url": "gs://edgenotfound"
     },
     {
-        "name": "Packa bunchas",
+        "name": "Packabunchas",
         "icon": "/games/images/",
-        "url": "/games/files/packabunchas"
+        "url": "gs://packabunchas"
     },
     {
         "name": "Retrohaunt",
         "icon": "/games/images/retrohaunt.webp",
-        "url": "/games/files/retrohaunt"
+        "url": "gs://retrohaunt"
     },
     {
         "name": "Roadblocks",
         "icon": "/games/images/roadblocks.webp",
-        "url": "/games/files/roadblocks"
+        "url": "gs://roadblocks"
     },
     {
         "name": "Run 3",
-        "icon": "/games/images/run3.webp",
-        "url": "/games/files/run3"
+        "icon": "/games/images/run3.jpg",
+        "url": "gs://run3"
     },
     {
         "name": "Slope",
         "icon": "/games/images/slope.jpg",
-        "url": "/games/files/slope"
+        "url": "gs://slope"
     },
     {
         "name": "Flappy Bird",
         "icon": "/games/images/flappy-bird.webp",
-        "url": "/games/files/flappy-bird"
+        "url": "gs://flappy-bird"
     },
     {
         "name": "Friday Night Funkin'",
         "icon": "/games/images/fridaynightfunkin.jpg",
-        "url": "/games/files/fridaynightfunkin"
+        "url": "gs://fridaynightfunkin"
     },
     {
         "name": "Garbage Collector",
         "icon": "/games/images/garbage-collector.png",
-        "url": "/games/files/garbage-collector"
+        "url": "gs://garbage-collector"
     },
     {
         "name": "Geometry Dash",
         "icon": "/games/images/geometrydash.jpg",
-        "url": "/games/files/geometry"
+        "url": "gs://geometry"
     },
-  {
+    {
         "name": "Friendly Fire",
         "icon": "/games/images/friendlyfire.jpg",
-        "url": "/games/files/friendlyfire"
+        "url": "gs://friendlyfire"
+    },
+    {
+        "name": "Multitask",
+        "icon": "/games/images/multitask.webp",
+        "url": "ruffle://multitask.swf"
     },
     {
         "name": "Doodle Jump",
         "icon": "/games/images/doodle-jump.jpg",
-        "url": "/games/files/doodle-jump"
+        "url": "gs://doodle-jump"
     },
     {
         "name": "HexGL",
         "icon": "/games/images/hexgl.jpg",
-        "url": "/games/files/hexgl"
+        "url": "gs://hexgl"
     },
     {
         "name": "The Chroma Incident",
         "icon": "/games/images/chroma.jpg",
-        "url": "/games/files/chroma"
+        "url": "gs://chroma"
     },
    {
         "name": "Chrome Dinosaur",
         "icon": "/games/images/chrome-dinosaur.jpg",
-        "url": "/games/files/dinosaur"
+        "url": "gs://dinosaur"
     },
     {
         "name": "Gopher Kart",
         "icon": "/games/images/gopher-kart.png",
-        "url": "/games/files/gopher-kart"
+        "url": "gs://gopher-kart"
     },
     {
         "name": "Hextris",
         "icon": "/games/images/hextris.webp",
-        "url": "/games/files/hextris"
+        "url": "gs://hextris"
     },
   {
         "name": "Cookie Clicker",
         "icon": "/games/images/cookie.webp",
-        "url": "/games/files/cookie"
+        "url": "gs://cookie"
     },
     {
         "name": "Radius Raid",
         "icon": "/games/images/radiusraid.jpg",
-        "url": "/games/files/radius-raid"
+        "url": "gs://radius-raid"
     },
     {
         "name": "Pacman",
         "icon": "/games/images/pacman.jpg",
-        "url": "/games/files/pacman"
+        "url": "gs://pacman"
     },
     {
         "name": "Space Invaders",
         "icon": "/games/images/space-invaders.png",
-        "url": "/games/files/space-invaders"
+        "url": "gs://space-invaders"
     },
     {
         "name": "Twitch Tetris",
         "icon": "/games/images/tetris.png",
-        "url": "/games/files/twitchtetris"
+        "url": "gs://twitchtetris"
     },
     {
         "name": "2048",
         "icon": "/games/images/2048.png",
-        "url": "/games/files/2048"
+        "url": "gs://2048"
     },
     {
         "name": "Justfall.lol",
@@ -192,37 +212,42 @@
     {
         "name": "Vex Backup Utility",
         "icon": "about:blank",
-        "url": "/games/files/vexbackuputil"
+        "url": "gs://vexbackuputil"
     },
     {
         "name": "Vex 1",
         "icon": "/games/images/vex1.webp",
-        "url": "/games/ruffle/?swf=/games/swf_files/vex.swf"
+        "url": "ruffle://vex.swf"
     },
     {
         "name": "Vex 3",
         "icon": "/games/images/vex3.jpg",
-        "url": "/games/files/vex3"
+        "url": "gs://vex3"
     },
     {
         "name": "Vex 4",
         "icon": "/games/images/vex4.jpg",
-        "url": "/games/files/vex4"
+        "url": "gs://vex4"
     },
     {
         "name": "Vex 5",
         "icon": "/games/images/vex5.jpg",
-        "url": "/games/files/vex5"
+        "url": "gs://vex5"
     },
     {
         "name": "Vex 6",
         "icon": "/games/images/vex6.jpg",
-        "url": "/games/files/vex6"
+        "url": "gs://vex6"
     },
     {
         "name": "Zombs Royale",
         "icon": "/games/images/zombsroyale.jpg",
-        "url": "zombsroyale.io"
+        "url": "https://zombsroyale.io"
+    },
+    {
+        "name": "xx142-b2.exe",
+        "icon": "/games/images/xx142-b2-exe.webp",
+        "url": "gs://xx142-b2exe"
     },
     {
         "name": "1v1.lol",
@@ -232,12 +257,12 @@
   {
         "name": "Retro Bowl",
         "icon": "/games/images/retro-bowl.jpg",
-        "url": "/games/files/retro-bowl"
+        "url": "gs://retro-bowl"
     },
     {
         "name": "Fireboy And Watergirl",
         "icon": "/games/images/fireboy-and-watergirl-forest-temple.jpg",
-        "url": "/games/files/fireboy-and-watergirl-forest-temple"
+        "url": "gs://fireboy-and-watergirl-forest-temple"
     },
   {
         "name": "Imposter.io",
@@ -247,12 +272,12 @@
     {
         "name": "Cubefield",
         "icon": "/games/images/cubefield.jpeg",
-        "url": "/games/files/cubefield"
+        "url": "gs://cubefield"
     },
       {
         "name": "Among Us Scratch",
         "icon": "/games/images/among.jpg",
-        "url": "/games/files/sus"
+        "url": "gs://sus"
     },
     {
         "name": "Little Alchemy",

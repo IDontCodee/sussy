@@ -6,12 +6,20 @@ import Proxy from "../components/proxy.jsx";
 import globeSVG from "../assets/globe.svg";
 import { getLink, fetchJSON } from "../util.js";
 
+import { gsFileStore, ruffleSwfStore, ruffleLocation } from '../consts.js';
+
 function Games() {
   var proxy = React.useRef();
   const [gitems, setgitems] = React.useState([]);
   React.useEffect(() => { fetchJSON("/games/games.json", setgitems) }, []);
 
   function goGame(config) {
+    if(config.url.startsWith('gs://')) config.url = config.url.replace('gs://', gsFileStore);
+    if(config.url.startsWith('ruffle://')) {
+      config.url = config.url.replace('ruffle://', ruffleLocation);
+      var cuturl = config.url.slice(18);
+      if(!(cuturl.startsWith('/') || cuturl.startsWith('http'))) config.url = ruffleLocation + ruffleSwfStore + cuturl;
+    }
     try {
       proxy.current.open({
         title: config.name,

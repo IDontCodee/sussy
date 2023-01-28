@@ -70,11 +70,8 @@ body[appearance="default"] .footericon, body[appearance="light"] .footericon, bo
 
 body[appearance="default"] .navitem, body[appearance="light"] .navitem, body[appearance="dark"] .navitem {
     background: transparent;
-    color: var(--highlight);
-}
-
-body[appearance="default"] body[navbar="text"] .navitem, body[appearance="light"] body[navbar="text"].navitem, body[appearance="dark"] body[navbar="text"] .navitem {
     border: 1px solid var(--highlight);
+    color: var(--highlight);
 }
 
   
