@@ -7,12 +7,14 @@ import Proxy from "../components/proxy.jsx";
 import BareClient from "@tomphttp/bare-client";
 import { bareServerURL } from "../consts.js";
 import { getLink, fetchJSON } from "../util.js";
+import { useLocalProxySelector } from "../settings.js";
 
 import { ProxyOption } from "../components/SettingsButtons.jsx";
 import Obfuscate from "../components/obfuscate.jsx";
 
 function Home() {
   const [data, setData] = React.useState();
+  const [localPxSelector] = useLocalProxySelector();
   React.useEffect(() => { fetchJSON("/URIconfig", setData) }, []);
 
   function loadDC() {
@@ -155,20 +157,23 @@ function Home() {
             ></div>
           ))}
         </div>
-        <div className="chooseoption" style={{ margin: 'auto' }}>
-        <ProxyOption type="Ultraviolet">
-          <Obfuscate>Ultraviolet</Obfuscate>
-        </ProxyOption>
-        <ProxyOption type="Stomp">
-          <Obfuscate>Stomp</Obfuscate>
-        </ProxyOption>
-        <ProxyOption type="Corrosion">
-          <Obfuscate>Corrosion</Obfuscate>
-        </ProxyOption>
-        <ProxyOption type="Rhodium">
-          <Obfuscate>Rhodium</Obfuscate>
-        </ProxyOption>
-        </div>
+        { localPxSelector == "home" ? (
+          <div className="chooseoption" style={{ margin: 'auto' }}>
+            <ProxyOption type="Ultraviolet">
+              <Obfuscate>Ultraviolet</Obfuscate>
+            </ProxyOption>
+            <ProxyOption type="Stomp">
+              <Obfuscate>Stomp</Obfuscate>
+            </ProxyOption>
+            <ProxyOption type="Corrosion">
+              <Obfuscate>Corrosion</Obfuscate>
+            </ProxyOption>
+            <ProxyOption type="Rhodium">
+              <Obfuscate>Rhodium</Obfuscate>
+            </ProxyOption>
+          </div>
+        ) : ""
+      }
       </div>
       <div className="iconFooter">
         <div className="footer-icons">

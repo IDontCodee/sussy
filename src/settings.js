@@ -14,6 +14,7 @@ export var useLocalProxy = () => useLocalFallback("type", "Ultraviolet");
 export var useLocalTitle = () => useLocalStorage("title");
 export var useLocalIcon = () => useLocalStorage("icon");
 export var useLocalNavbar = () => useLocalFallback("navbar", "icons");
+export var useLocalProxySelector = () => useLocalFallback("pxsel", "settings");
 
 
 export function resetSettings() {

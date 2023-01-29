@@ -7,7 +7,8 @@ import {
     useLocalBackground,
     useLocalControls,
     useLocalNavbar,
-    useLocalRounding
+    useLocalRounding,
+    useLocalProxySelector
 } from "../settings.js";
 
 
@@ -124,3 +125,19 @@ export function NavbarOption({ type, children }) {
       </div>
     );
 };
+
+
+export function ProxySelectionOption({ type, children }) {
+  const [localPxSelector, setLocalPxSelector] = useLocalProxySelector();
+
+  return (
+    <div
+      onClick={() => {
+        setLocalPxSelector(type);
+      }}
+      className={clsx("optionchoose", type === localPxSelector && "chooseactive")}
+    >
+      {children}
+    </div>
+  );
+}

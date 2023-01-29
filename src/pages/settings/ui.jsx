@@ -1,6 +1,6 @@
 import React from "react";
 import Obfuscate from "../../components/obfuscate.jsx";
-import { ControlsOption, RoundingOption, NavbarOption } from "../../components/SettingsButtons.jsx";
+import { ControlsOption, RoundingOption, NavbarOption, ProxySelectionOption } from "../../components/SettingsButtons.jsx";
 
 function UI() {
   return (
@@ -46,6 +46,17 @@ function UI() {
         <NavbarOption type="text">
           <Obfuscate>Text</Obfuscate>
         </NavbarOption>
+      </div>
+      <div className="optiontitle">
+        <Obfuscate>Proxy Selection</Obfuscate>
+      </div>
+      <div className="chooseoption">
+        <ProxySelectionOption type="settings">
+          <Obfuscate>Settings only</Obfuscate>
+        </ProxySelectionOption>
+        <ProxySelectionOption type="home">
+          <Obfuscate>Settings and Homepage</Obfuscate>
+        </ProxySelectionOption>
       </div>
     </>
   );
