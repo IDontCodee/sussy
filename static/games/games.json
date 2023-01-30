@@ -45,6 +45,11 @@
         "url": "ruffle://bashthecomputer.swf"
     },
     {
+        "name": "Learn To Fly",
+        "icon": "/games/images/learn2fly",
+        "url": "ruffle://learn2fly.swf"
+    },
+    {
         "name": "Breaklock",
         "icon": "/games/images/breaklock.png",
         "url": "gs://breaklock"
