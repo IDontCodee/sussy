@@ -30,6 +30,16 @@
         "url": "ruffle://stickwar.swf"
     },
     {
+        "name": "Portal",
+        "icon": "/games/images/portal",
+        "url": "ruffle://portal2d.swf"
+    },
+    {
+        "name": "Portal 2D",
+        "icon": "/games/images/portal2d",
+        "url": "ruffle://portal.swf"
+    },
+    {
         "name": "Bash the Computer",
         "icon": "/games/images/bashthecomputer.webp",
         "url": "ruffle://bashthecomputer.swf"
