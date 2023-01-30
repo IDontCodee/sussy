@@ -25,6 +25,11 @@
         "url": "ruffle://1on1soccer.swf"
     },
     {
+        "name": "Stickwar",
+        "icon": "",
+        "url": "ruffle://stickwar.swf"
+    },
+    {
         "name": "Bash the Computer",
         "icon": "/games/images/bashthecomputer.webp",
         "url": "ruffle://bashthecomputer.swf"
