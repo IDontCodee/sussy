@@ -1,3 +1,5 @@
-entrypoint = "e/README.md"
-language = "nodejs"
-run = ["yarn", "start"]
+run = ["bash", "replit.sh"]
+onboot = "chmod +x replit.sh"
+
+[nix]
+channel = "stable-22_11"
