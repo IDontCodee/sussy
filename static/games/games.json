@@ -135,11 +135,6 @@
         "url": "gs://roadblocks"
     },
     {
-        "name": "Run 3",
-        "icon": "/games/images/run3.jpg",
-        "url": "gs://run3"
-    },
-    {
         "name": "Slope",
         "icon": "/games/images/slope.jpg",
         "url": "gs://slope"
@@ -250,11 +245,6 @@
         "url": "https://shellshock.io"
     },
     {
-        "name": "Krunker.io",
-        "icon": "/games/images/krk.png",
-        "url": "https://krunker.io"
-    },
-    {
         "name": "Vex Backup Utility",
         "icon": "about:blank",
         "url": "gs://vexbackuputil"
@@ -308,11 +298,6 @@
         "name": "Fireboy And Watergirl",
         "icon": "/games/images/fireboy-and-watergirl-forest-temple.jpg",
         "url": "gs://fireboy-and-watergirl-forest-temple"
-    },
-  {
-        "name": "Imposter.io",
-        "icon": "/games/images/imposter.png",
-        "url": "https://imposter.io"
     },
     {
         "name": "Cubefield",
