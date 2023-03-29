@@ -25,11 +25,6 @@
         "url": "ruffle://1on1soccer.swf"
     },
     {
-        "name": "Stickwar",
-        "icon": "/games/images/stickwar",
-        "url": "ruffle://stickwar.swf"
-    },
-    {
         "name": "Portal",
         "icon": "/games/images/portal",
         "url": "ruffle://portal2d.swf"
@@ -133,11 +128,6 @@
         "name": "Roadblocks",
         "icon": "/games/images/roadblocks.webp",
         "url": "gs://roadblocks"
-    },
-    {
-        "name": "Run 3",
-        "icon": "/games/images/run3.jpg",
-        "url": "gs://run3"
     },
     {
         "name": "Slope",
@@ -250,11 +240,6 @@
         "url": "https://shellshock.io"
     },
     {
-        "name": "Krunker.io",
-        "icon": "/games/images/krk.png",
-        "url": "https://krunker.io"
-    },
-    {
         "name": "Vex Backup Utility",
         "icon": "about:blank",
         "url": "gs://vexbackuputil"
@@ -308,11 +293,6 @@
         "name": "Fireboy And Watergirl",
         "icon": "/games/images/fireboy-and-watergirl-forest-temple.jpg",
         "url": "gs://fireboy-and-watergirl-forest-temple"
-    },
-  {
-        "name": "Imposter.io",
-        "icon": "/games/images/imposter.png",
-        "url": "https://imposter.io"
     },
     {
         "name": "Cubefield",
